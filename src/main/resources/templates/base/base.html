@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/page1/page1_body.css}">
+<link rel="stylesheet" th:href="@{/css/page2/page2_body.css}">
+
+<link rel="stylesheet" th:href="@{/css/page3/index_body.css}">
+<link rel="stylesheet" th:href="@{/css/page3/page0_body_total.css}">
+<link rel="stylesheet" th:href="@{/css/page3/page3.css}">
+
+<title>base.html</title>
+</head>
+<body>
+
+<div th:replace="~{fragments/main-header :: header}"></div>
+
+<div class="ground"><!--div class="ground"-->
+<div class="index_content"><!--div class="index_content"-->
+<div class="index_button_line1" style="margin-top:30px;"><!--div class="index_button_line1"-->
+<div class="button_content1" style="flex-direction:column;"><!--div class="button_content1"-->
+
+
+
+
+<div class="Module_Layout_1" style="margin-bottom:80px;"><!--div class="Module_Layout_1"-->
+<div class="Module_Layout_1_1"><!--div class="Module_Layout_1_1"-->
+
+    <div class="Module_Layout_1_1_1">
+        <div class="Module_Layout_1_1_1_1">
+            <div class="Module_Layout_1_1_1_1_0">
+            <a style="font-size:18px;">B1</a>                                          
+            </div>
+            <div class="Module_Layout_1_1_1_1_1">
+
+                <a class = "Module_Layout_1_1_1_1_1_0_page">프로세서 베이스</a>
+
+            </div>
+
+            <div class="Module_Layout_1_1_1_1_2_back" onclick="history.back()">
+                <a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a>
+            </div>
+
+        </div>
+    </div>
+
+<div class="Module_Layout_1_1_2"><!--div class="Module_Layout_1_1_2"-->
+<div class="Module_Layout_1_1_2_1"><!--div class="Module_Layout_1_1_2_1"-->
+
+        <div class="Module_Layout_1_1_2_1_1" style="margin-left : 20px; margin-bottom:12px; margin-top:25px;"> 
+        <a class="mdi_a" style="font-size : 24px !important;">MobileDeviceInfo</a><a style="font-size : 20px !important;">에서 사용하는</a><a class="mdi_a" style="font-size : 20px !important;">프로세서 베이스</a><a style="font-size : 20px !important;">을 확인할 수 있습니다.</a>
+        </div>
+
+<div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+<div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+<div class="Module1"><!--모듈1-Start-->
+
+
+
+
+
+<table class="cpulist_table_page1_base" style="margin-bottom:-60px; margin-top:-20px;">
+<tr class="SearchResult_Table_Row_base" style="background : linear-gradient(90deg, rgb(39, 0, 21) 10%, rgb(83, 5, 48) 30%, rgb(94, 32, 70) 50%,  rgb(179, 84, 135) ); height:40px;">   
+
+ 
+    <td><div class="total1_base" ><div class="total2_base" style="width : 50px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">순번</a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 110px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black;">제조사</a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 180px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black;">명칭</a></div></div></td>
+
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:center; height:37px;"><a style="color:white; text-shadow:0 0 3px black; margin-right:1px;">코어</a><a style="margin-left:5px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 60px; justify-content:center; height:37px;"><a style="color:white; text-shadow:0 0 3px black; margin-right:1px;">스레드</a><a style="margin-left:5px;"></a></div></div></td>
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 120px; justify-content:right; height:37px;"><a style="color:white; text-shadow:0 0 3px black; margin-right:2px;">최고 속도</a><a style="font-size:12px; margin-right:2px; color:white; text-shadow:0 0 3px black;">(Ghz)</a><a style="margin-left:5px; font-size:14px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 120px; justify-content:right; height:37px;"><a style="color:white; text-shadow:0 0 3px black; margin-right:2px;">기본 속도</a><a style="font-size:12px; margin-right:2px; color:white; text-shadow:0 0 3px black;">(Ghz)</a><a style="margin-left:5px; font-size:14px;"></a></div></div></td>
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--내용-->
+<table class="cpulist_table_page1_base" >
+
+        <?php
+ 
+        $sql = "select * from mcl order by id_cpu asc";		// 일련번호 내림차순 전체 레코드 검색
+        $result = mysqli_query($con, $sql);			// SQL 명령 실행
+        $total_record = mysqli_num_rows($result); // 전체 글 수
+        for ($i=0; $i<$total_record; $i++) {
+        mysqli_data_seek($result, $i); 		// 가져올 레코드로 위치(포인터) 이동      	
+        $row = mysqli_fetch_assoc($result); // 하나의 레코드 가져오기
+        $id_cpu         = $row["id_cpu"];			// 일련번호
+        $name_cpu        = $row["name_cpu"];		// 이름
+        $manf_cpu        = $row["manf_cpu"];	
+        $core_cpu        = $row["core_cpu"];	
+        $thread_cpu        = $row["thread_cpu"];
+        $maxghz_cpu        = $row["maxghz_cpu"];	
+        $minghz_cpu        = $row["minghz_cpu"];	
+        ?>
+
+       
+
+
+
+
+
+
+
+
+<tr class="SearchResult_Table_Row_base" >   
+
+ 
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:left;"><a><?=$id_cpu?></a></div></div></td>
+    <td>
+        <div class="total1_base">
+            <div class="total2_base" style="width : 110px;">
+
+            <div class="manf_cpu_base">
+
+                <div class="manf_cpu_base_logo">
+                <a style="width:28px; height:28px;"><?php require $_SERVER['DOCUMENT_ROOT'].'/page1/percpuBrand.php'; ?></a>
+                </div>
+
+                <div class="manf_cpu_base_name">
+                <a><?=$manf_cpu?></a>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 180px; justify-content:left;"><a style="margin-left:5px"><?=$name_cpu?></a></div></div></td>
+
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:right;"><a><?=$core_cpu?></a><a style="margin-left:5px;">C</a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 60px; justify-content:right;"><a><?=$thread_cpu?></a><a style="margin-left:5px;">T</a></div></div></td>
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 120px; justify-content:right;"><a><?=$maxghz_cpu?></a><a style="margin-left:5px; font-size:12px;">Ghz</a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 120px; justify-content:right;"><a><?=$minghz_cpu?></a><a style="margin-left:5px; font-size:12px;">Ghz</a></div></div></td>
+
+
+
+ 
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php
+        }
+
+
+
+
+        ?>
+
+</table>
+
+<!--내용-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--모듈1-End-->
+
+
+
+
+
+
+</div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2_1_2"-->
+</div><!--div class="Module_Layout_1_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2"-->
+</div><!--div class="Module_Layout_1_1"-->
+<div id="Module_Layout_1_device"></div>
+</div><!--div class="Module_Layout_1"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Module_Layout_1"><!--div class="Module_Layout_1"-->
+<div class="Module_Layout_1_1"><!--div class="Module_Layout_1_1"-->
+
+    <div class="Module_Layout_1_1_1">
+        <div class="Module_Layout_1_1_1_1">
+            <div class="Module_Layout_1_1_1_1_0">
+            <a style="font-size:18px;">B2</a>                                           
+            </div>
+            <div class="Module_Layout_1_1_1_1_1">
+
+                <a class = "Module_Layout_1_1_1_1_1_0_page">디바이스 베이스</a>
+
+            </div>
+
+          <div class="Module_Layout_1_1_1_1_2_back" onclick="history.back()">
+                <a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a>
+            </div>
+            
+        </div>
+    </div>
+
+<div class="Module_Layout_1_1_2"><!--div class="Module_Layout_1_1_2"-->
+<div class="Module_Layout_1_1_2_1"><!--div class="Module_Layout_1_1_2_1"-->
+
+        <div class="Module_Layout_1_1_2_1_1" style="margin-left : 10px; margin-bottom:12px; margin-top:25px;"> 
+        <a class="mdi_a" style="font-size : 24px !important;">MobileDeviceInfo</a><a style="font-size : 20px !important;">에서 사용하는</a><a class="mdi_a" style="font-size : 20px !important;">디바이스 베이스</a><a style="font-size : 20px !important;">을 확인할 수 있습니다.</a>
+        </div>
+
+<div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+<div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+<div class="Module1"><!--모듈1-Start-->
+
+
+
+
+
+<table class="cpulist_table_page1_base" style="margin-bottom:-60px; margin-top:-20px;">
+<tr class="SearchResult_Table_Row_base" style="background : linear-gradient(90deg, rgb(39, 0, 21) 10%, rgb(83, 5, 48) 30%, rgb(94, 32, 70) 50%,  rgb(179, 84, 135) ); height:40px;">   
+<td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">순번</a></div></div></td>
+<td><div class="total1_base"><div class="total2_base" style="width : 120px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">제조사</a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 280px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">명칭</a></div></div></td>
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 140px; justify-content:left; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">탑재 프로세서</a><a style="margin-left:5px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 70px; justify-content:center; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">유형</a><a style="margin-left:5px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:center; height:37px;"><a style="color:white; text-shadow:0 0 3px black; ">출시</a><a style="margin-left:5px; font-size:14px;"></a></div></div></td>
+
+
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--내용-->
+<table class="cpulist_table_page1_base" >
+        <?php
+
+            $sql = "select * from mdl order by id_device asc";		// 일련번호 내림차순 전체 레코드 검색
+            $result = mysqli_query($con, $sql);			// SQL 명령 실행
+            $total_record = mysqli_num_rows($result); // 전체 글 수
+            for ($i=0; $i<$total_record; $i++) {
+            mysqli_data_seek($result, $i); 		// 가져올 레코드로 위치(포인터) 이동      	
+            $row = mysqli_fetch_assoc($result); // 하나의 레코드 가져오기
+            $id_device         = $row["id_device"];			// 일련번호
+            $name_device        = $row["name_device"];		// 이름
+            $manf_device        = $row["manf_device"];	
+            $cpu_device        = $row["cpu_device"];
+            $type_device        = $row["type_device"];	
+            $release_device        = $row["release_device"];
+            ?>
+
+       
+
+
+
+
+
+
+
+
+<tr class="SearchResult_Table_Row_base" >   
+
+ 
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:left;"><a><?=$id_device?></a></div></div></td>
+    <td>
+        <div class="total1_base">
+            <div class="total2_base" style="width : 120px;">
+
+            <div class="manf_device_base">
+
+                <div class="manf_device_base_logo">
+                <a style="width:28px; height:28px;"><?php require $_SERVER['DOCUMENT_ROOT'].'/page2/perBrand.php'; ?></a>
+                </div>
+
+                <div class="manf_device_base_name">
+                <a><?=$manf_device?></a>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </td>
+
+    <td><div class="total1_base"><div class="total2_base" style="width : 280px; justify-content:left;"><a style="margin-left:5px"><?=$name_device?></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 140px; justify-content:left;"><a><?=$cpu_device?></a><a style="margin-left:5px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 70px; justify-content:center;"><a><?=$type_device?></a><a style="margin-left:5px;"></a></div></div></td>
+    <td><div class="total1_base"><div class="total2_base" style="width : 50px; justify-content:right;"><a><?=$release_device?></a><a style="margin-left:5px; font-size:14px;"></a></div></div></td>
+   
+
+
+ 
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php
+        }
+  
+        $select_query = "SELECT id_cpu, name_cpu FROM mcl";
+        $result_set = mysqli_query($con, $select_query);
+        mysqli_data_seek($result_set, 2);
+        $row = mysqli_fetch_row($result_set);
+        mysqli_close($con);
+
+
+
+        ?>
+
+</table>
+
+<!--내용-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--모듈1-End-->
+
+</div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2_1_2"-->
+</div><!--div class="Module_Layout_1_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2"-->
+</div><!--div class="Module_Layout_1_1"-->
+</div><!--div class="Module_Layout_1"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--div class="button_content1"-->
+</div><!--div class="index_button_line1"-->
+</div><!--div class="index_content"-->
+</div><!--div class="ground"-->
+
+
+</body>
+</html>

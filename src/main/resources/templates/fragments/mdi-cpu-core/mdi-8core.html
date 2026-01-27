@@ -1,0 +1,58 @@
+<div th:fragment="mdi8core">
+  <script th:inline="javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChartCore8);
+
+    var num08 = [[${coreCount8} ?: 0]];
+
+    function drawChartCore8() {
+      var data = google.visualization.arrayToDataTable([
+        ['', '모델 수', { role: 'style' }],
+        ['8코어', num08, '#f80185']
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1, 2, {
+        calc: "stringify",
+        sourceColumn: 1,
+        type: "string",
+        role: "annotation"
+      }]);
+
+      var options = {
+        backgroundColor:'transparent',
+        chartArea: {width: '100%', height: '40%'},
+        legend: { position: "none" },
+        bar: { groupWidth: '80%' },
+        hAxis: {
+          viewWindowMode: 'maximized',
+          showLabel: false,
+          minValue: 0,
+          maxValue: 250,
+          textPosition: 'none',
+          gridlines: { color: 'none' }
+        },
+        vAxis: {
+          viewWindowMode: 'maximized',
+          showLabel: false,
+          textStyle: {
+            fontSize: 26,
+            bold: true
+          },
+          textPosition: 'none'
+        },
+        annotations: {
+          textStyle: {
+            fontSize: 22,
+            bold: true,
+            color: 'white',
+            opacity: 1.8
+          }
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div_core4'));
+      chart.draw(view, options);
+    }
+  </script>
+</div>

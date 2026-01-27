@@ -1,0 +1,11 @@
+<!-- fragments/deviceSearch.html -->
+<div th:fragment="deviceSearch">
+    <form th:action="@{/search/device}" method="get" class="devicelist_searchbox_form">
+        <select class="category" name="catgo">
+            <option value="name_device">name_total</option>
+        </select>
+        <input class="devicelist_searchbox_text" type="text" name="search" required placeholder="디바이스 검색하기">
+<!--         <button type="submit">검색</button> -->
+    </form>
+</div>
+

@@ -1,0 +1,65 @@
+<!-- src/main/resources/templates/fragments/device-spec/device-spec-type.html -->
+<div th:fragment="typeGraph(typeDevice)">
+    <div class="line_spec">
+        <div class="chart_div">
+
+            <!-- 유형 라벨 -->
+            <div class="chart_div_image1">
+                <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:13px; color:white; width: 40px;">Type</a>
+                </div>
+            </div>
+
+            <!-- 텍스트 라벨 -->
+            <div class="chart_div_image2">
+                <div><a>기기 유형</a></div>
+            </div>
+
+            <!-- 유형 아이콘 또는 텍스트 -->
+            <div class="chart_div_image4" style="width:45px;">
+                <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:15px; color:white; width: 40px;"
+                       th:text="${#strings.substring(typeDevice, 0, 3)}">Lap</a>
+                </div>
+            </div>
+
+            <!-- 유형 이름 -->
+            <div class="chart_div_image3" style="width:80px; justify-content:left;">
+                <div>
+<!--                    <a class="chart_div_image3_parameter"-->
+<!--                       th:href="@{'/devices?type=' + ${typeDevice}}"-->
+<!--                       th:text="${typeDevice}"></a>-->
+					   <a class="chart_div_image3_parameter"
+					      th:href="@{'/search/device?catgo=type_device&search=' + ${typeDevice}}"
+					      th:text="${typeDevice}"></a>
+
+                </div>
+            </div>
+
+            <!-- 버튼 -->
+            <div class="chart_div_graph_device_nochart_type">
+				
+<!--                <div class="chart_div_graph_device_nochart_type1">-->
+<!--                    <a th:href="@{'/devices?type=laptop'}">laptop</a>-->
+<!--                </div>-->
+<!--                <div class="chart_div_graph_device_nochart_type2">-->
+<!--                    <a th:href="@{'/devices?type=smartphone'}">smartphone</a>-->
+<!--                </div>-->
+
+<!--					<div class="chart_div_graph_device_nochart_type1">-->
+<!--					    <a th:href="@{'/search/device?catgo=type_device&search=LAPTOP'}">laptop</a>-->
+<!--					</div>-->
+<!--					<div class="chart_div_graph_device_nochart_type2">-->
+<!--					    <a th:href="@{'/search/device?catgo=type_device&search=MOBILE'}">smartphone</a>-->
+<!--					</div>-->
+<!--					<div class="chart_div_graph_device_nochart_type2">-->
+<!--					    <a th:href="@{'/search/device?catgo=type_device&search=TAB'}">tablet</a>-->
+<!--					</div>-->
+
+					<div th:replace="fragments/device-spec/device-type-buttons :: deviceTypeButtons(${typeDevice})"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

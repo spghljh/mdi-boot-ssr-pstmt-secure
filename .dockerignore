@@ -1,0 +1,54 @@
+# 빌드 결과물
+# target 디렉토리는 제외하지만 JAR 파일은 포함
+target/*
+!target/*.jar
+
+build/
+out/
+*.class
+*.war
+*.ear
+
+# IDE 설정 파일
+*.classpath
+*.project
+.settings/
+.idea/
+.vscode/
+
+# 로그 및 캐시
+*.log
+*.tmp
+*.cache
+*.pid
+*.swp
+*.bak
+*.gz
+*.lock
+
+# 환경 설정
+.env
+application-dev.properties
+
+# DB 파일
+*.db
+*.h2.db
+*.sqlite
+
+# 테스트 결과
+/test-output/
+/coverage/
+
+# Git 관련
+.git/
+.gitignore
+
+# 문서 및 기타
+*.md
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Maven/Gradle 내부 디렉토리
+.mvn/
+.gradle/

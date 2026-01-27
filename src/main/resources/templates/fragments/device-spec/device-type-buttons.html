@@ -1,0 +1,15 @@
+<!-- src/main/resources/templates/fragments/device-spec/device-type-buttons.html -->
+<th:block th:fragment="deviceTypeButtons(activeType)">
+    <div th:class="${#strings.equalsIgnoreCase(activeType, 'LAPTOP')} ? 'chart_div_graph_device_nochart_type1' : 'chart_div_graph_device_nochart_type2'">
+        <a th:href="@{'/search/device?catgo=type_device&search=LAPTOP'}">LAPTOP</a>
+    </div>
+    <div th:class="${#strings.equalsIgnoreCase(activeType, 'MOBILE')} ? 'chart_div_graph_device_nochart_type1' : 'chart_div_graph_device_nochart_type2'">
+        <a th:href="@{'/search/device?catgo=type_device&search=MOBILE'}">MOBILE</a>
+    </div>
+    <div th:class="${#strings.equalsIgnoreCase(activeType, 'TABLET')} ? 'chart_div_graph_device_nochart_type1' : 'chart_div_graph_device_nochart_type2'">
+        <a th:href="@{'/search/device?catgo=type_device&search=TABLET'}">TABLET</a>
+    </div>
+<!--    <div th:class="${#strings.equalsIgnoreCase(activeType, 'UNDEFINED')} ? 'chart_div_graph_device_nochart_type1' : 'chart_div_graph_device_nochart_type2'">-->
+<!--        <a th:href="@{'/search/device?catgo=type_device&search=UNDEFINED'}">undefined</a>-->
+<!--    </div>-->
+</th:block>

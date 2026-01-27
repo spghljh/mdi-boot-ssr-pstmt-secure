@@ -1,0 +1,35 @@
+<div th:fragment="weightGraph(weightDevice)">
+    <div class="line_spec">
+        <div class="chart_div">
+
+            <div class="chart_div_image1">
+                <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:14px; color:white; width: 40px;">Wgt</a>
+                </div>
+            </div>
+
+            <div class="chart_div_image2">
+                <div><a>무게</a></div>
+            </div>
+
+            <div class="chart_div_image3" style="width:80px;">
+                <div>
+                    <a class="chart_div_image3_parameter"
+                       th:href="@{'/devices?weight=' + ${weightDevice}}"
+                       th:text="${weightDevice}"></a>
+                </div>
+            </div>
+
+            <div class="chart_div_image4" style="width:45px;">
+                <div><a>kg</a></div>
+            </div>
+
+            <div class="chart_div_graph_device_nochart">
+                <div class="chart_div_graph_device_nochart_button">
+                    <a th:href="@{'/devices?weight=' + ${weightDevice}}">유사한 무게의 다른 제품</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

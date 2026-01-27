@@ -1,0 +1,70 @@
+.page2_body{
+    color : hsl(0, 100%, 50%);
+    height: auto;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100px;
+    margin-left: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.page2_body_content{
+    color: rgb(255, 0, 200);
+    margin: 8px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    outline-style: solid;
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+.cpulist_table_page2{
+    background-color: transparent;
+    font-size: 38;
+    width : auto;
+    margin : 0 auto;
+    padding : 20px;
+    border-collapse : separate;
+    text-align : center; 
+    border-radius: 8px;
+}
+.cpulist_per_page2{
+    outline-style: solid;
+    background-color: hwb(0 100% 0%);
+    color: rgb(0, 0, 0);
+    line-height : 15px; 
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    font-weight : 700;
+    height: 30px;
+    width: auto;
+}
+.cpulist_per_page2:hover{
+    outline-style: solid;
+    background-color: hwb(0 100% 0%);
+    color: hsl(330, 100%, 50%);
+    line-height : 15px; 
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    font-weight : 700;
+    height: 30px;
+    a{
+        color: hsl(330, 100%, 50%);
+    }
+}

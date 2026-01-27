@@ -1,0 +1,43 @@
+<div th:fragment="cpuModule(favoriteCpus)">
+    <div class="units_line" th:if="${#lists.isEmpty(favoriteCpus)}">
+        <a class="units_line_noData1">아직 추가한 항목이 없습니다.</a>
+        <a class="units_line_noData2">프로세서 상세 정보에서 추가할 수 있습니다.</a>
+    </div>
+
+    <div class="units_line" th:if="${!#lists.isEmpty(favoriteCpus)}">
+        <div th:each="cpu : ${favoriteCpus}" class="cpulist_per_user2_outer">
+            <div class="cpulist_per_user2_1">
+                <div class="info1">
+                    <div class="units4_image" style="width:50px; height:50px; margin-left:30px; margin-right:10px;">
+                        <!-- 브랜드 이미지가 있다면 여기에 처리 -->
+<!--                         <img th:src="@{/images/brand/{brand}.png(brand=${cpu.cpuManfCode})}" alt="브랜드" /> -->
+<!--                         <img th:src="@{'/image/' + ${cpu.cpuManfCode} + '.png'}" alt="브랜드 이미지" style="width:50px; height:50px;" /> -->
+                        <img th:src="@{'/image/' + ${#strings.toLowerCase(cpu.cpuManfCode)} + '.png'}" alt="브랜드 이미지" style="width:50px; height:50px;" />
+                        
+                    </div>
+
+                    <div class="units4">
+<!--                         <a th:href="@{'/cpu/detail/' + ${cpu.idCpu}}" th:text="${cpu.manfCpu}"></a> -->
+                        <a th:href="@{'/cpus/' + ${cpu.idCpu}}" th:text="${cpu.manfCpu}"></a>
+                    </div>
+
+                    <div class="units1_cpu">
+<!--                         <a th:href="@{'/cpu/detail/' + ${cpu.idCpu}}" th:text="${cpu.nameCpu}"></a> -->
+                        <a th:href="@{'/cpus/' + ${cpu.idCpu}}" th:text="${cpu.nameCpu}"></a>
+                    </div>
+
+                    <div class="units">
+<!--                         <a th:href="@{'/cpu/detail/' + ${cpu.idCpu}}" th:text="${cpu.coreCpu + ' 코어'}"></a> -->
+                        <a th:href="@{'/cpus/' + ${cpu.idCpu}}" th:text="${cpu.coreCpu + ' 코어'}"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cpulist_per_user2_2">
+                <form th:action="@{'/member/delete-cpu/' + ${cpu.idCpu}}" method="post">
+                    <button type="submit" class="delete_button_css">삭제</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

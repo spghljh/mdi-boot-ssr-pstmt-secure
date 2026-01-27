@@ -1,0 +1,55 @@
+<!-- src/main/resources/templates/fragments/mdi-cpu-device-list/device-list.html -->
+<div th:fragment="fragment">
+    <div class="CpuSpecToDevice">
+        <table class="cpulist_table_page1">
+            <tr th:each="device : ${devices}" class="SearchResult_Table_Row_page2" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                <td>
+                    <div class="total1_image">
+                        <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                            <a style="font-size:14px; color:white; width: 40px; text-shadow:0 0 2px black;">Dvic</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="total1_type" style="margin-left:-160px;">
+                        <div class="total2_type"><a>디바이스</a></div>
+                    </div>
+                </td>
+                <td>
+<!--                     <div class="total1_manf_image" style="margin-left:-50px;"> -->
+<!--                         <div class="total2_manf_image" th:text="${device.manfDevice}"></div> -->
+<!--                     </div> -->
+                    <div class="total1_manf_image" style="margin-left:-50px;">
+                      <div class="total2_manf_image">
+					    <img th:src="@{'/image/' + ${#strings.toLowerCase(device.manfDevice)} + '.png'}"
+					         th:alt="${device.manfDevice}"
+					         style="height: 24px;" />
+					</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="total1_name_device" style="margin-left:-100px;">
+                        <div class="total2_name_device">
+<!--                             <a th:href="@{'/page2/page2view_id?id_device=' + ${device.idDevice}}" -->
+<!--                                th:text="${device.nameDevice}"></a> -->
+							<a th:href="@{'/devices/' + ${device.idDevice}}"
+							   th:text="${device.nameDevice}"></a>
+
+                        </div>	
+                    </div>
+                </td>
+                <td style="margin-left: 50px;">
+                    <div class="total1_cpuindevice">
+                        <div class="total2_cpuindevice">
+<!--                             <a th:href="@{'/page2/page2view_id?id_device=' + ${device.idDevice}}" -->
+<!--                                th:text="${device.cpuDevice}"></a> -->
+							<a th:href="@{'/devices/' + ${device.idDevice}}"
+							   th:text="${device.cpuDevice}"></a>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

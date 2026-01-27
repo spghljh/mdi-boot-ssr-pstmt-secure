@@ -1,0 +1,41 @@
+<div th:fragment="releaseGraph(releaseDevice)">
+    <div class="line_spec">
+        <div class="chart_div">
+
+            <div class="chart_div_image1">
+                <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:14px; color:white; width: 40px;">Rel</a>
+                </div>
+            </div>
+
+            <div class="chart_div_image2">
+                <div><a>제품 출시</a></div>
+            </div>
+
+            <div class="chart_div_image3" style="width:80px;">
+                <div>
+                    <a class="chart_div_image3_parameter"
+                       th:href="@{'/search/device?catgo=release_device&search=' + ${releaseDevice}}"
+                       th:text="${releaseDevice}"></a>
+                </div>
+            </div>
+
+            <div class="chart_div_image4" style="width:45px;">
+                <div><a>년도</a></div>
+            </div>
+
+            <div class="chart_div_graph_device_nochart">
+                <div class="chart_div_graph_device_nochart_button">
+                    <!-- 하나의 링크 안에 releaseDevice + 설명 같이 -->
+                    <a th:href="@{'/search/device?catgo=release_device&search=' + ${releaseDevice}}">
+                        <span style="color:#e0c2fe !important; text-shadow:0 0 2px black !important; font-weight:700 !important; margin-right:3px;">
+                            <span th:text="${releaseDevice}"></span>
+                        </span>
+                        년 출시 다른 제품
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

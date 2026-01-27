@@ -1,0 +1,25 @@
+<!-- fragments/mdi-device-module.html -->
+<div th:fragment="mdiModule2">
+  <div class="mdi1_total1">
+    <div class="Total_Count">
+      <div class="Total_Count_Amount"><a th:text="${totalDeviceCount}">0</a></div>
+      <div class="Total_Count_Device"><a>디바이스</a></div>
+    </div>
+  </div>
+
+  <div class="mdi1">
+    <div class="mdi_core_total">
+
+      <!-- 각 제조사별 차트 삽입 (자동화) -->
+      <div th:each="stat : ${manfStats}">
+        <div th:replace="~{fragments/mdi-device-manf/mdi-manf-chart :: manfChart(
+          ${stat.manfDevice}, ${stat.count}, 'chart_div_' + ${stat.manfDevice}
+        )}"></div>
+      </div>
+
+    </div>
+
+    <!-- 전체 제조사 파이 차트 -->
+    <div th:replace="~{fragments/mdi-device-manf/mdi-manf-pie-total :: manufacturerPie(${manfStats})}"></div>
+  </div>
+</div>

@@ -1,0 +1,1797 @@
+
+
+/* 헤더 user 박스*/
+ .user_login_button{
+  width : 100px;
+  height : 30px;
+  background-color :transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+
+  margin-bottom: 13px;
+  color : rgb(255, 255, 255);
+
+  margin-top : 16px;
+ }
+
+ .user_login{
+
+
+  color : rgb(255, 255, 255);
+
+
+
+ }  
+
+
+.user_login_inside{
+
+
+  color : rgb(255, 255, 255);
+
+
+  
+
+}
+
+
+.user_login_inside_logged{
+
+
+
+}
+/* 헤더 user 박스*/
+  
+
+
+.user_login_button_logged{
+
+
+  width : 100px;
+  height : 30px;
+
+
+  background-color :transparent;
+  border-radius: 4px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+  
+  display : flex;
+  justify-content: center;
+  align-items : center;
+ 
+  margin-top : 16px;
+
+}
+
+
+
+
+.user_login_button_logged{
+
+  color : rgb(255, 255, 255);
+
+  a:link {
+    color : rgb(255, 255, 255);
+  }
+  a:visited {
+    color : rgb(255, 255, 255);
+  }
+  a:hover {
+    color : hsl(330, 100%, 50%);
+    text-shadow: 0 0 2px black;
+  }
+  a:active {
+    color : rgb(255, 255, 255);
+  }
+
+}
+
+.user_login_button{
+
+  color : rgb(255, 255, 255);
+
+  a:link {
+    color : rgb(255, 255, 255);
+  }
+  a:visited {
+    color : rgb(255, 255, 255);
+  }
+  a:hover {
+    color : hsl(330, 100%, 50%);
+    text-shadow: 0 0 2px black;
+  }
+  a:active {
+    color : rgb(255, 255, 255);
+  }
+
+}
+  
+
+
+
+
+
+
+
+/* 헤더 user 박스*/
+
+
+
+
+
+
+.index_body_user{
+
+  color : hwb(0 0% 0%);
+  
+  
+  height: auto;
+  
+  
+  flex-direction: column;
+  
+  background-color: transparent;
+  width: 1200px;
+  margin-left: 12px;
+  border-radius: 10px;
+  margin-top : 60px;
+  
+  
+  
+  }
+  
+  
+  .index_button_user{
+  
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ .user_main{
+  
+  padding-top : 20px;
+  margin: 0 auto;
+  color : transparent;
+  padding : 10px;
+  width : 90%;
+  height : auto;
+ 
+  display: flex;
+  flex-direction: column;
+ 
+ }  
+
+ .user_main_title{
+  outline-style: dotted;
+  margin: 0 auto;
+  color : transparent;
+  padding : 20px;
+  width : 90%;
+  height : 30px;
+
+  display: flex;
+}
+
+.user_main_title_part1{
+  
+  margin: 0 auto;
+  color : #0010a0;
+  width : 100px;
+  height : 30px;
+  flex : 3;
+  text-align: center;
+}
+
+.user_main_title_part2{
+  
+  margin: 0 auto;
+  color : #0010a0;
+  width : 100px;
+  height : 30px;
+  flex :3;
+  text-align: center;
+}
+
+.user_main_title_part3{
+  
+  margin: 0 auto;
+  color : #0010a0;
+  width : 100px;
+  height : 30px;
+  flex :3;
+  text-align: center;
+}
+
+.user_main_content{
+  outline-style: dotted;
+  margin: 0 auto; 
+  color : #80006b;
+
+  width : 90%;
+  height : 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+
+ .user_main_info1{
+  outline-style: dotted;
+  margin: 0 auto;
+  color : transparent;
+
+  width : 90%;
+  height : auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ .user_main_info2{
+  outline-style: dotted;
+  margin: 0 auto; 
+  color : transparent;
+
+  width : 90%;
+  height : auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ 
+
+
+
+
+
+
+
+
+ .user_layout{
+
+  color:rgb(0, 0, 0);
+
+
+
+  flex-direction: column;
+  width: 100%;
+
+
+  display : flex;
+  justify-content: center;
+  align-items : center;
+
+  margin: 30px;
+
+ 
+ }
+
+
+
+      .user_layout_title{
+        
+
+  
+
+        display : flex;
+        justify-content: center;
+        align-items : center;
+        width: 90%;
+
+        height: 60px;
+
+
+      }
+
+
+
+
+      .user_layout_form{
+        
+
+  
+
+        display : flex;
+        justify-content: center;
+        align-items : center;
+
+
+        width: 100%;
+ 
+
+      }
+
+
+
+
+
+
+                        .user_layout_form_line{
+                          
+                          color : hsl(167, 100%, 50%);
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+                          flex-direction: column;
+
+                          width: auto;
+                          height: auto;
+
+                          margin: 10px;
+                          padding-bottom: 20px;
+                  
+
+                          
+                        }
+
+
+                        .user_layout_form_line_box1{
+                          color : black;
+                          font-size: 36px;
+                          width: 800px;
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+                          flex-direction: column;
+                          margin: 10px;
+                          height: auto;
+                        }
+
+                        .user_layout_form_line_box1_semi{
+                          color : rgb(126, 0, 84);
+                          font-size: 36px;
+                          width: 800px;
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+                          flex-direction: column;
+                          margin: 5px;
+                          height: auto;
+
+                  
+                          font-weight:700;
+                          font-size:36px;
+                    
+                     
+
+                        }
+
+
+                        .user_layout_form_line_box2{
+                      
+                          
+                          color : rgb(250, 0, 0);
+                          
+                         
+
+ 
+                          width: 100%;
+
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+                          flex-direction: column;
+                   
+                          height: 100%;
+
+
+                          
+                        }
+
+
+
+                        .user_body_content1{
+                          
+                          
+                          color : rgb(250, 0, 0);
+                          padding : 20px;
+                       
+
+ 
+                          width: auto;
+
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+                          flex-direction: column;
+
+                          margin-top : 8px;
+                          margin-bottom : 8px;
+
+                          height: 100%;
+                          }
+                          
+
+
+
+
+                        .user_layout_form_line_content{
+                          margin-top : 8px;
+                          margin-bottom : 10px;
+                          display: flex;
+                          flex-direction: column;
+                          height: 50px;
+                        }
+
+
+                        input::placeholder {
+                          color: #5300317e;
+                          font-size: 18px;
+                          
+                         
+                      
+                          
+                         
+                      }
+
+
+                        .user_layout_form_line_content_register{
+                          
+                          margin-top : 10px;
+                          margin-bottom : 10px;
+
+                          display: flex;
+                          flex-direction: column;
+                        
+                          height: 50px;
+                        
+ 
+      
+                        }
+
+                        .user_layout_form_line_content_edit{
+                         
+                          
+                          margin-top : 10px;
+                          margin-bottom : 10px;
+
+                          display: flex;
+                          flex-direction: column;
+                        
+                          height: 50px;
+                          width: 300px;
+                         
+
+ 
+                        }
+
+                        .user_layout_form_line_content_edit_coment{
+                          color: black;
+                          font-size: 16px;
+                    
+                          
+                        }
+
+                        
+                        .user_layout_form_line_content_edit_coment_id{
+                          width: 300px;
+                          height: 50px;
+                  
+                          outline-style: solid;
+                          outline-width: 3px;
+                          border-radius: 10px;
+                          border: none;
+                          color: rgb(126, 0, 84);
+                          font-size: 24px;
+                          background-color: rgba(126, 0, 84, 0.322);
+                          display: flex;
+                          justify-content: left;
+                          align-items: center;
+
+                          margin-bottom: 10px;
+                          margin-top: 10px;
+                        }
+
+
+                        .user_layout_form_line_content_edit_coment_id2{
+                          color: rgb(126, 0, 84);
+             
+                          margin: 5px;
+                          height: 40px;
+                          font-size: 24px;
+                          font-weight: 700;
+                    
+               
+                          
+                        }
+
+                        .focus_1{
+                          font-weight: 700;
+                          color: rgb(170, 0, 113);
+                        }
+
+
+                        .user_layout_form_line_content_edit_button{
+                   
+                          display: flex;
+                          flex-direction: column;
+          
+                          border-radius: 5px;
+                          height: 70px;
+                        
+                          display : flex;
+                          justify-content: center;
+                          align-items : center;
+
+                          
+                          background: rgb(126, 0, 84);
+                          color : white;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+
+
+
+
+ 
+                        }
+
+
+
+                        .user_layout_form_line_content_edit_input{
+                          width: 300px;
+                          height: 50px;
+                          padding-left: 16px;
+                          outline-style: solid;
+                          outline-width: 3px;
+                          border-radius: 10px;
+                          border: none;
+                          color: rgb(126, 0, 84);
+                          font-size: 24px;
+
+                        }
+  
+                        .user_layout_form_line_content_register_coment{
+
+                          
+                        
+                            color:#d300a5;
+                            font-size: 14px;
+                            font-weight: 100;
+                          
+                        }
+             
+
+
+
+                        .id_input{
+                          width: 300px;
+                          height: 50px;
+                          padding-left: 16px;
+                          outline-style: solid;
+                          outline-width: 3px;
+                          border-radius: 10px;
+                          border: none;
+                          color: rgb(126, 0, 84);
+                          font-size: 24px;
+                        }
+
+                        .pw_input{
+                          width: 300px;
+                          height: 50px;
+                          padding-left: 16px;
+                          outline-style: solid;
+                          outline-width: 3px;
+                          border-radius: 10px;
+                          border: none;
+                          color: rgb(126, 0, 84);
+                          font-size: 24px;
+                        }
+
+
+                        .password{
+                          width: 300px;
+                          height: 50px;
+                          padding-left: 16px;
+                          outline-style: solid;
+                          outline-width: 3px;
+                          border-radius: 10px;
+                          border: none;
+                          color: rgb(126, 0, 84);
+                          font-size: 24px;
+                        }
+
+
+
+
+
+
+                        .user_layout_form_line_content_register_button{
+                          
+                
+                          display: flex;
+                          flex-direction: column;
+                        
+                          width: 300px;
+                          
+                        
+                          
+      
+                        }
+
+
+
+                        .login_button{
+                          width: 320px;
+                          height: 50px;
+                        
+
+                          background: rgb(141, 141, 141);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+
+                        }
+
+                        .login_button:hover{
+                          width: 320px;
+                          height: 50px;
+                        
+
+                          background: rgb(126, 0, 84);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+
+                        }
+
+                        .register_button{
+                          width: 320px;
+                          height: 50px;
+                         
+
+                          background: rgb(126, 0, 84);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+                        } 
+
+                        .register_button:hover{
+                          width: 320px;
+                          height: 50px;
+                         
+
+                          background: rgb(192, 0, 128);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+                        } 
+
+
+                    
+
+
+                        .save_button{
+                          width: 300px;
+                          height: 50px;
+                        
+
+                          background: rgb(126, 0, 84);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+
+                 
+                        }
+
+                        .cancel_button{
+                          width: 300px;
+                          height: 50px;
+                          
+
+                          background: rgb(124, 87, 112);
+                          color : white;
+
+                          border-radius: 5px;
+
+                          a{
+                            color : rgb(255, 255, 255);
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-shadow: -0.5px 0px black, 0px 0.5px black, 0.5px 0px black, 0px -0.5px black;
+                            }
+                        } 
+
+
+
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+                        .user_body{
+                          
+                          outline-width: 1px;
+                          
+                          
+                          height: auto;
+                          
+                          
+                          flex-direction: column;
+                          
+                          background-color: transparent;
+                          width: auto;
+                         
+                          
+                          }
+                          
+                          
+                          
+                          .user_body_content0{
+                          
+                          color : rgb(95, 0, 24);
+                          border-radius: 10px;
+                          flex : 90%;
+                          height: auto;
+                          margin : 30px;
+                          padding-bottom : 20px;
+                          width: 900px;
+                          }
+                          
+
+
+
+
+
+
+                          
+                          
+                          
+                          
+
+
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          /* 내용 */
+                          .cpulist_table_user {
+                          padding : 20px;
+                          background-color: transparent;
+                          font-size: 38;
+                          width : 240px;
+                          margin : 0 auto;
+                          padding-top: 10px;
+                          margin-bottom: 20px;
+                          margin-top: 20px;
+                          border-collapse : separate;
+                          border-spacing : 15px;
+                          text-align : center; 
+                          border-radius: 8px;
+                          border-spacing: 0 10px;
+                          }
+                            
+
+                           
+
+
+
+
+                          
+                          a{
+                          text-decoration-line: none;
+                          }
+                          
+                          a:link {
+                          color : black;
+                          }   
+                          
+                          .cpulist_per_user:hover{
+                          margin-bottom: 30px;
+                          
+                          color: hwb(0 100% 0%);
+                          box-shadow: 0px 0px 30px #ff0202;
+                          line-height : 42px; 
+                          text-align : center;
+                          }
+                          
+                          .category{
+                          display: none
+                          }
+                          /* 내용 */
+
+
+
+                          .user1{
+                            display: flex;
+                            flex-direction: column;
+
+                            
+                          }
+
+
+
+                        
+                                                    .user_title1{
+                                                      
+                                                      outline-width: 1px;
+                                                      color: black;
+                                                      width: 80%;
+                                                      justify-content: center;
+                                                      align-items: center;
+                                                      margin : 0 auto;
+                                                      margin-bottom : 15px;
+                                                      
+                                                      display: flex;  
+                                                      flex-direction: column;
+
+
+                                                    }
+
+
+                                                    
+                                                    .user_title2{
+
+                                                      
+                                                      background : linear-gradient(90deg, rgb(36, 0, 10) 5%, rgb(90, 0, 23) 40%, rgba(221, 0, 55, 0.795), rgb(66, 0, 17) );
+ 
+                                                      color: rgb(0, 0, 0);
+                                            
+                                                      width: 1030px;
+                                                      height: 80px;
+                                                      justify-content: center;
+                                                      align-items: center;
+                                                      margin : 0 auto;
+                                         
+                                                      border-radius: 5px;
+
+                                                      display: flex;  
+                                                      a{
+
+                                                      color : hsl(0, 0%, 100%);
+                                                      text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+
+                                                      
+                                                      }
+                                                    }
+
+                                                    .user_title2_line{
+                                                      display: flex;  
+                                            
+                                  
+                                                      color: red;
+                                           
+                                                      height: 80%;
+                                                      width: 95%;
+                                                      padding: 3px;
+                                                      background-color: transparent;
+                                                      font-size: 24px;
+
+                                                      a{
+                                                        color : white;
+                                                      }
+                                                      a:hover{
+                                                        color : hsl(330, 100%, 50%);
+                                                        text-shadow: 0 0 2px black;
+                                                      }
+                                                      
+                                                    }
+
+
+                                                    .user_semi_title{
+
+                                               
+                                                      color: black;
+                                                      width: 80%;
+                                                      justify-content: center;
+                                                      align-items: center;
+                                                      margin : 0 auto;
+                                                      margin-bottom : 9px;
+                                                      margin-top : 9px;
+                                                      font-size: 20px;
+                                                      font-weight: 800;
+                                                    }
+
+
+                                                    
+.user_title_part1{
+
+  color: black;
+  width: auto;
+  padding : 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+                                                          
+ flex : 1;
+}
+
+
+.user_title_part2{
+
+  color: black;
+  width: auto;
+  padding : 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex : 1;                                                                   
+}
+
+
+
+.user_title_part3{
+
+  color: black;
+  width: auto;
+  padding : 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex : 1;                                                               
+}
+
+
+
+.user_title_part0{
+
+  color: #ff0000;
+  width: 400px;
+  padding : 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout_button{
+
+  width: auto;
+
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.logout_button:hover{
+
+  width: auto;
+
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    color : hsl(330, 100%, 50%);
+    text-shadow: 0 0 2px black;
+  }
+ 
+}
+
+ .tool1_user{
+
+  outline-width: 1.5px;
+
+  color: rgb(255, 0, 200);
+  margin: 8px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+
+
+ 
+  text-shadow: 0 0 3px white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+
+                          .user2{
+                        
+                            outline-width: 1px;
+                            border-radius: 5px;
+                       
+                            color: hsl(234, 100%, 50%);
+                            width: auto;
+                            height: auto;
+
+                    
+
+                            padding-left : 10px;
+                            padding-right : 10px;
+                            margin-left : 10px;
+                            margin-right : 10px;
+                       
+
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+
+
+                     
+               
+
+                            
+                          }
+
+
+
+
+                          .user2_column{
+                        
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            flex-direction: column;
+  
+
+
+                            
+                          }
+
+
+                                                    .user_info1{
+
+                                      
+                                                      width: auto;
+                                                      height: auto;
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+
+
+                                        
+
+                                                    }
+
+                                                    .user_info2{
+
+                                                    }
+
+
+
+
+                                                    .cpulist_per_user{
+
+
+
+                                                      margin-bottom: 15px;
+                                                      
+                                                     
+                                                      color: rgb(0, 0, 0);
+                                                      line-height : 42px; 
+                                                      font-size: 15px;
+                                                      border-radius: 10px;
+                                                      box-shadow: 0px 0px 10px black;
+                                                      height: 24px;
+                                                 
+                            
+                                                      
+                                                      display: flex;
+
+                                                      align-items: center;
+                                                      justify-content: center;
+
+
+
+
+                                                    }
+
+
+                   
+
+                                                    .units_line{
+
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      flex-direction: column;
+                                                    }
+
+                                                    
+                                                    .units_line_noData1{
+
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      flex-direction: column;
+
+                                                      margin-top:20px;
+                                                      margin-bottom:5px;
+                                                      
+                                                      color : rgb(127, 127, 127);
+                                                      font-size:30px;
+                                                      animation: blink 2s infinite; /* 1초 간격으로 무한 반복 */
+                                                    }
+                                                                                           
+                                                    .units_line_noData2{
+
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      flex-direction: column;
+
+                                                     
+                                                      margin-bottom:24px;
+                                                      
+                                                      color : rgb(132, 132, 132);
+                                                      font-size:18px;
+                                                      animation: blink 2s infinite; /* 1초 간격으로 무한 반복 */
+                                                    }
+
+                                                    
+                                                    .cpulist_per_user2_outer{
+                                                      width: auto;
+                                                      height: auto;
+                                                      background : white;
+                                                      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.74);
+                                                      margin-bottom: 15px;
+                                                      display: flex;
+                                                      border-radius: 5px;
+                                                      outline-style: solid;
+                                                      outline-width: 2px;
+                                                      color: hwb(0 0% 100%);
+                                                      a{
+                                                        color: rgb(0, 0, 0);
+                                                         }
+  
+                                                    }
+
+
+                                                    .cpulist_per_user2_outer:hover{
+                                                      width: auto;
+                                                      height: auto;
+                                                      background : white;
+                                                      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.74);
+                                                      margin-bottom: 15px;
+                                                      display: flex;
+                                                      border-radius: 5px;
+                                                      outline-style: solid;
+                                                      outline-width: 2px;
+                                                      color: hwb(318 18% 15%);
+                                                      a{
+                                                        color: hwb(318 18% 15%);
+                                                        text-shadow: 0 0 2px black;
+                                                         }
+
+                                                         .delete_button_css{
+                                                          color: rgba(185, 185, 185, 0.877);
+                                                       
+                                                      }
+
+                                                        .delete_button_css:hover{
+                                                          color : hsl(330, 100%, 50%) !important;
+                                                          text-shadow: 0 0 2px black;
+                                                         
+                                                        }
+                                                    }
+
+
+                                                                .cpulist_per_user2_1{
+                                                                  
+                                                                  outline-width: 1px;
+                                                                  color: #000000;
+                                                                  width: 600px;
+                                                                  height: auto;
+
+                                                                  margin: 5px;
+                                                
+                                                             
+                                                                
+                                                               
+                                                                  display: flex;
+                                                                  align-items: left;
+                                                                  justify-content: left;
+                                                                  flex-direction: column;
+                                                                  
+
+                                                        
+                                                  
+
+                                                                }
+
+
+                                                                .cpulist_per_user2_2{
+                                                                  display: flex;
+                                                                  align-items: center;
+                                                                  justify-content: center;
+
+                                                                  outline-width: 1px;
+                                                                  border-radius: 5px;
+                                                                  color: hwb(0 0% 100%);
+                                                                  width: 80px;
+                                                                  height: auto;
+                                                            
+
+                                                                 
+                                                                
+                                                                  
+                                                     
+                                                                }
+
+       
+
+
+
+                                                    .info1{
+
+                                                      display: flex;
+                                                      
+                                                      
+
+                                                      a{
+                                                        color: black;
+                                                      }
+                                                    }
+
+
+                                                    .info2{
+                                                      
+                                                      display: flex;
+                                                    }
+
+
+
+
+                                                    /*
+                                                      .units1_cpu{
+                                                    
+                                                        outline-width: 1px;
+                                                        color: black;
+                                                        font-size: 30px;
+
+
+                                                        
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: left;
+                                                   
+                                                        width: 240px;
+                                                        margin-left: 20px;
+
+                                                        
+
+                                                      }
+                                                       */
+
+
+
+
+
+
+
+                                                      /* 디바이스 제조사 */
+                                                      .units4{
+                                                        outline-width: 1px;
+                                                        color: black;
+                                                        font-size: 18px;
+                                                     
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        width: 100px;
+                                                      
+                                                      }
+                                                      /* 디바이스 명칭 */
+                                                      .units1_device{
+                                                        outline-width: 1px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                       
+                                                        padding-left: 12px;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: left;
+                                                        width: 350px;
+                                                       
+                                                      }
+                                                      /* 프로세서 명칭 */
+                                                      .units1_cpu{
+                                                        outline-width: 1px;
+                                                        color: black;
+                                                        font-size: 32px;
+                                                       
+                                                        
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        width: 350px;
+                                                    
+                                                      }
+                                                       /* 탑재 프로세서 */
+                                                      .units{
+                                                        outline-width: 1px;
+                                                        color: black;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: right;
+                                                        width: 120px;
+                                                        font-size: 18px;
+                                                 
+                                                      }
+
+                            
+
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button_content2_user{
+  background-color: transparent;
+  border-radius: 10px;
+  flex : 6;
+
+  display : flex;
+  justify-content: center;
+  align-items : center;
+
+
+  width: auto;
+
+
+  
+  }
+
+
+
+  .button_content3_user{
+  background-color: black;
+  flex : 6;
+
+  display: flex;
+  flex-direction: column;
+  padding : 2.4px; /*모듈 모서리 두께 조절*/
+  margin: 10px;
+
+  height: auto;
+  width: auto;
+
+
+  box-shadow: 0px 0px 5px rgba(37, 37, 37, 0.718);
+
+  border-radius: 10px;
+  height: auto;
+
+
+  }   
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+          .default_user{
+          background : linear-gradient(90deg, rgb(24, 22, 23) 5%, rgb(80, 53, 70) 30%,  rgb(230, 212, 222)  );
+          flex : 1;
+          color : #ff0000;
+          display: flex;  
+          align-items : center;   
+          width: auto;
+
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px; 
+          height: auto;
+   
+  
+          }   
+
+                  .default_content_user{
+                  flex : 3;
+
+                  margin : 10px;
+                  margin-left: 15px;
+                 
+                  width: auto;
+                
+                
+                  display : flex;
+            
+                  padding-left : 5px;
+          
+
+                  }   
+
+
+                  @keyframes fadeInLeft3 {
+                    0% {
+                    opacity: 0;
+                    transform: translate3d(5%, 0, 0);
+                    }
+                    to {
+                    opacity: 1;
+                    transform: translateZ(0);
+                    }
+            }
+
+                  .default_content_user_status{
+                    flex : 3;
+  
+                    margin : 10px;
+                    margin-left: 15px;
+                   
+                    width: auto;
+                    height: 80px;
+                  
+                    display : flex;
+              
+                    padding-left : 5px;
+                  
+      
+  
+                    }  
+
+
+
+                  .default_content_text_user{
+              
+                       
+                  }
+
+
+
+                                  .default_content_text1_user{
+                                        
+                                          flex : 2;
+                                          font-size: 20px;
+                                          display : flex;
+                                          justify-content: left;
+                                          align-items : center;
+                                          margin-bottom: 5px;
+                                          a{
+                                          color: white;
+                                          text-shadow: 0 0 4px black;
+                                        }
+
+                                  
+                              
+                                  }
+
+                                  .default_content_text2_user{
+                                   
+                                          flex : 1;
+                                          font-size: 26px;
+                                          display : flex;
+                                          justify-content: center;
+                                          align-items : center;
+                                          margin-bottom: 5px;
+                                      
+                                        
+                                  
+                                  }
+
+                                  .delete_button{
+                                    width: 60px;
+                                    height: 30px;
+                                    background-color: rgb(255, 255, 255);
+                                    color: rgb(0, 0, 0);
+                                    display : flex;
+                                    justify-content: center;
+                                    align-items : center;
+                                    border-radius: 3px;
+                                    font-size: 16px;
+
+                                    a{
+                                      color: rgba(187, 187, 187, 0.678);
+                                    }
+
+                                
+                                  }
+
+                                  .delete_button_css:hover{
+                                    width: 60px;
+                                    height: 30px;
+                                    background-color: rgb(255, 255, 255);
+                                    color : hsl(330, 100%, 50%);
+                                
+                                    display : flex;
+                                    justify-content: center;
+                                    align-items : center;
+                                    border-radius: 3px;
+                                    font-size: 16px;
+
+                                  
+                                  }
+
+
+                                  .default_content_text3_user{
+                                    background : linear-gradient(white, rgb(199, 199, 199));
+                                    color: black;
+                                    height: 100%;
+                             
+                                    font-size: 26px;
+                                    display : flex;
+                                    justify-content: center;
+                                    align-items : center;
+                                    margin-bottom: 5px;
+                
+                                  }   
+
+
+                          
+
+
+
+                          .action_user{
+                            background : linear-gradient(white, rgb(199, 199, 199));
+                            flex : 2.4;
+                            color : black;
+                        
+                            display : flex;
+                            justify-content: center;
+                            align-items : center;
+
+                            border-bottom-left-radius: 8px; 
+                            border-bottom-right-radius: 8px; 
+
+                            width : auto; 
+                            height: auto;
+                            
+                            flex-direction: column;
+                       
+                            }   
+
+
+
+
+                            .slider_content1_pro_user{
+                              width : 100%; 
+                              background : transparent;   
+                              color : black;
+                            
+                             display : flex;
+                             justify-content: center;
+                             align-items : center;
+                             flex-direction: column;
+                      }
+
+
+
+
+                      .slider_content_text_div1_pro_user{
+
+                        display : flex;
+                        justify-content: center;
+                        align-items : center;
+                         flex-direction: column;
+                        
+                              
+                              color: hsl(0, 100%, 50%);
+                  
+                        
+                                   
+                                    margin: 10px;
+                                    width: auto;
+                                    height: auto;
+      
+                         
+                                    font-size: 15px;
+                                    font-weight: 700;
+                            
+                            
+                        
+             
+                              a{
+                                   
+                                   
+                                      color : hsl(0, 0%, 0%);
+                                      font-weight: 700;
+                        
+                                      font-size: 17px;
+                                      margin-left: 20px;
+ 
+                              
+
+                              }     
+                      }
+
+
+
+                      .slider_content_text_div1_pro_con_user{
+            
+                        color: hsl(0, 100%, 50%);
+            
+                  
+                             
+                              margin: 10px;
+                              width: 800px;
+                              height: auto;
+
+                   
+                              font-size: 15px;
+                              font-weight: 700;
+                    
+                      
+                      
+                  
+                      }
+
+

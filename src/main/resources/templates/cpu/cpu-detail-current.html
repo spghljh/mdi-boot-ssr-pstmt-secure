@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/page1/index_body.css}">
+<link rel="stylesheet" th:href="@{/css/page1/page0_body_total.css}">
+
+<link rel="stylesheet" th:href="@{/css/page1/page1view_id_body.css}">
+<link rel="stylesheet" th:href="@{/css/page1/page1view_id_ForMainTitle.css}">
+<link rel="stylesheet" th:href="@{/css/page1/page1view_id_body_CpuSpecToDevice.css}">
+<title>cpu_detail.html</title>
+</head>
+<body>
+
+<div th:replace="~{fragments/main-header :: header}"></div>
+
+
+    <div class="ground"><!--div class="ground"-->
+    <div class="index_content"><!--div class="index_content"-->
+    <div class="index_button_line1" style="margin-top:30px;"><!--div class="index_button_line1"-->
+    <div class="button_content1"><!--div class="button_content1"-->
+
+    <div class="Module_Layout_1"><!--div class="Module_Layout_1"-->
+    <div class="Module_Layout_1_1"><!--div class="Module_Layout_1_1"-->
+
+        <div class="Module_Layout_1_1_1_view">
+            <div class="Module_Layout_1_1_1_1">
+
+                <div class="Module_Layout_1_1_1_1_1" style="height:120px;">
+
+                        <div class="module1_ForMainTitle">
+                        <div class="module3_ForMainTitle" >
+
+                                            <div class="page1view_id_body_title_ForMainTitle" >
+                                            <div><div class="Module_Layout_1_1_1_1_0" style="margin-right:8px; margin-top:8px; margin-left:7px;"><a style="font-size:18px;">P2</a></div></div>
+                                                <div class="page1view_id_body_title_part1_ForMainTitle_Total" >
+                                                        <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;">프로세서 상세정보</a>
+                                                        <a class = "Module_Layout_1_1_1_1_1_0_22" STYLE="MARGIN-RIGHT:12PX; font-size:22px;">></a>
+<!--                                                         <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;" th:text="${cpu.manfCpu}"></a> -->
+														<a class="Module_Layout_1_1_1_1_1_0"
+														   STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;"
+														   th:href="@{/search/cpu(catgo='manf_cpu', search=${cpu.manfCpu})}"
+														   th:text="${cpu.manfCpu}"></a>
+
+                                                        <a class = "Module_Layout_1_1_1_1_1_0_22" STYLE="MARGIN-RIGHT:12PX; font-size:22px;">></a>
+                                                        <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;" th:text="${cpu.nameCpu}"></a>
+                                                </div>
+                                                <div class="Module_Layout_1_1_1_1_2_back_view" onclick="history.back()"><a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a></div>
+                                            </div>
+
+                                            <div class="page1view_id_body_title_ForMainTitle" style="margin-top:5px;">
+
+
+                                                <div class="page1view_id_body_title_part2_ForMainTitle">
+                                                    <div class="page1view_id_body_title_part2_name_cpu_ForMainTitle"><a th:text="${cpu.nameCpu}"></a></div>
+                                                </div>
+
+
+<!--                                                 <div class="page1view_id_body_title_part4_ForMainTitle"> -->
+<!--                                                 <table> -->
+<!--                                                     <tr><td></td></tr> -->
+<!--                                                 </table> -->
+<!--                                                 </div> -->
+
+<!--                                                 <div class="page1view_id_body_title_part4_ForMainTitle"> -->
+<!-- 												    <form th:action="@{/member/add-cpu}" method="post" style="display:inline;"> -->
+<!-- 												        <input type="hidden" name="cpuName" th:value="${cpu.nameCpu}" /> -->
+<!-- 												        <button type="submit" class="add_button">추가</button> -->
+<!-- 												    </form> -->
+<!--                                                 </div> -->
+
+                                                <div class="page1view_id_body_title_part4_ForMainTitle">
+													<form th:action="@{/member/add-cpu}" method="post" style="display:inline;">
+													    <input type="hidden" name="cpuId" th:value="${cpu.idCpu}" />
+													    <button type="submit" class="add_button">추가</button>
+													</form>
+                                                </div>
+                                                
+                                            </div>
+
+                        </div>
+                        </div>
+
+
+                </div>
+
+
+
+                <div class="Module_Layout_1_1_1_1_2">
+                    <a class = "Module_Layout_1_1_1_1_1_0"></a>                            
+                </div>
+
+
+            </div>
+        </div>
+
+
+    <div class="Module_Layout_1_1_2"><!--div class="Module_Layout_1_1_2"-->
+    <div class="Module_Layout_1_1_2_1" style="background-color:white; border-bottom-left-radius:8px; border-bottom-right-radius:8px;"><!--div class="Module_Layout_1_1_2_1"-->
+
+                <div class="Module_Layout_1_1_2_1_1"> 
+
+                </div>
+
+    <div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+    <div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+    <div class="Module1_start_page1view_id"><!--모듈1-Start-->
+
+
+    <!--내용-->
+
+
+    <div class="module_name1">
+    <div class="module_name2">
+
+        <div class="page1view_id_body_content_outer_title_moduleName1">
+            <a>프로세서 기본 정보</a>
+        </div>
+        <div class="page1view_id_body_content_outer_title_moduleName2">
+
+        </div>  
+        <div class="page1view_id_body_content_outer_title_moduleName3">
+            <a class="page1view_id_body_content_outer_title_moduleName3_text">프로세서의 기본적인 정보를 확인할 수 있습니다.</a>
+    
+        </div>
+
+    </div>
+    </div> 
+
+
+    <div class="module1">
+    <div class="module2">  
+    <div class="module3">
+
+    <div class="module_spec_cpu">
+
+			<div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-manf :: manfGraph(${cpu.manfCpu})">
+			</div>
+
+			<div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-release :: releaseGraph(${cpu.releaseCpu})">
+			</div>
+            
+			<div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-core :: coreGraph(${cpu.coreCpu})">
+			</div>
+            
+			<div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-thread :: threadGraph(${cpu.threadCpu})">
+			</div>
+            
+            <div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-maxghz :: maxghzGraph(${cpu.maxghzCpu})">
+			</div>
+
+			<div class="module_spec_cpu_version2"
+			     th:replace="fragments/cpu-spec/cpu-spec-minghz :: minghzGraph(${cpu.minghzCpu})">
+			</div>
+	
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+        
+
+        
+
+
+
+    
+
+
+
+
+    <div class="module_name1">
+    <div class="module_name2">
+
+        <div class="page1view_id_body_content_outer_title_moduleName1">
+            <a>모델 제조사 분포</a>
+        </div>
+        <div class="page1view_id_body_content_outer_title_moduleName2">
+
+        </div>
+        <div class="page1view_id_body_content_outer_title_moduleName3">
+        <a class="page1view_id_body_content_outer_title_moduleName3_text">해당 프로세서를 탑재한 제조사와 디바이스 수를 보여줍니다.</a>
+        </div>
+
+    </div>
+    </div> 
+
+
+    <div class="module1">
+    <div class="module2">  
+    <div class="module3">
+
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-hp :: deviceBrandGraphHp"></div>
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-asus :: deviceBrandGraphAsus"></div>
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-msi :: deviceBrandGraphMsi"></div>
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-dell :: deviceBrandGraphDell"></div>
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-samsung :: deviceBrandGraphSamsung"></div>
+		<div th:replace="fragments/mdi-cpu-device-brand-list/device-brand-lg :: deviceBrandGraphLg"></div>
+
+    </div> 
+    </div> 
+    </div> 
+
+
+
+    <div class="module_name1">
+    <div class="module_name2">
+
+        <div class="page1view_id_body_content_outer_title_moduleName1">
+            <a>탑재 모델</a>
+        </div>
+        <div class="page1view_id_body_content_outer_title_moduleName2">
+
+        </div>
+        <div class="page1view_id_body_content_outer_title_moduleName3">
+        <a class="page1view_id_body_content_outer_title_moduleName3_text">해당 프로세서가 탑재된 디바이스를 살펴보세요.</a>
+        </div>
+
+    </div>
+    </div> 
+
+
+    <div class="module1">
+    <div class="module2">  
+    <div class="module3">
+
+    <div th:replace="fragments/mdi-cpu-device-list/device-list :: fragment"></div>
+
+    </div> 
+    </div>
+    </div>  
+
+
+
+    <!--내용-->
+
+
+
+    </div><!--모듈1-End-->
+
+    </div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+    </div><!--div class="Module_Layout_1_1_2_1_2"-->
+    </div><!--div class="Module_Layout_1_1_2_1"-->
+    </div><!--div class="Module_Layout_1_1_2"-->
+    </div><!--div class="Module_Layout_1_1"-->
+    </div><!--div class="Module_Layout_1"-->
+
+
+
+    </div><!--div class="button_content1"-->
+    </div><!--div class="index_button_line1"-->
+    </div><!--div class="index_content"-->
+    </div><!--div class="ground"-->
+
+
+</body>
+</html>

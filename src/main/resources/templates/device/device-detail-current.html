@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/page1/index_body.css}">
+<link rel="stylesheet" th:href="@{/css/page1/page0_body_total.css}">
+
+<link rel="stylesheet" th:href="@{/css/page2/page2view_id_body.css}">
+<link rel="stylesheet" th:href="@{/css/page2/page2view_id_ForMainTitle.css}">
+<link rel="stylesheet" th:href="@{/css/page2/page2view_id_CpuGraph.css}">
+<title>device-detail.html</title>
+</head>
+<body>
+
+<div th:replace="~{fragments/main-header :: header}"></div>
+
+<div class="ground"><!--div class="ground"-->
+<div class="index_content"><!--div class="index_content"-->
+<div class="index_button_line1" style="margin-top:30px;"><!--div class="index_button_line1"-->
+<div class="button_content1"><!--div class="button_content1"-->
+
+
+
+	
+
+
+
+
+<div class="Module_Layout_1"><!--div class="Module_Layout_1"-->
+<div class="Module_Layout_1_1"><!--div class="Module_Layout_1_1"-->
+
+
+
+
+
+
+    <div class="Module_Layout_1_1_1_view">
+        <div class="Module_Layout_1_1_1_1">
+
+
+
+
+
+
+
+            <div class="Module_Layout_1_1_1_1_1" style="height:120px;">
+
+
+
+
+
+
+
+                    <div class="module1_ForMainTitle">
+                    <div class="module3_ForMainTitle" >
+
+
+
+                                        <div class="page2view_id_body_title_ForMainTitle">
+                                        <div><div class="Module_Layout_1_1_1_1_0" style="margin-right:8px; margin-top:8px; margin-left:7px;"><a style="font-size:18px;">D2</a></div></div>
+
+                                            <div class="page2view_id_body_title_part1_ForMainTitle_Total">
+
+                                                    <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;">디바이스 상세정보</a>
+                                                    <a class = "Module_Layout_1_1_1_1_1_0_22" STYLE="MARGIN-RIGHT:12PX; font-size:22px;">></a>
+<!--                                                     <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;" th:text="${device.releaseDevice}"></a> -->
+<!--                                                     <a class = "Module_Layout_1_1_1_1_1_0_22" STYLE="MARGIN-RIGHT:12PX; font-size:22px;">></a> -->
+                                                    <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;" th:text="${device.manfDevice}"></a>
+                                                    <a class = "Module_Layout_1_1_1_1_1_0_22" STYLE="MARGIN-RIGHT:12PX; font-size:22px;">></a>
+                                                    <a class = "Module_Layout_1_1_1_1_1_0" STYLE="MARGIN-RIGHT:12PX; font-size:22px; color: white !important;" th:text="${device.nameDevice}"></a>
+                                            </div>
+                                            <div class="Module_Layout_1_1_1_1_2_back_view" onclick="history.back()"><a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a></div>
+                                        </div>
+
+
+
+
+                                        <div class="page2view_id_body_title_ForMainTitle" style="margin-top:5px;">
+
+
+                                            <div class="page2view_id_body_title_part2_ForMainTitle">
+                                                <div class="page2view_id_body_title_part2_name_device_ForMainTitle"><a th:text="${device.nameDevice}"></a></div>
+                                            </div>
+
+
+<!--                                            <div class="page2view_id_body_title_part4_ForMainTitle"> -->
+<!--                                            <table> -->
+<!--                                                 <tr><td></td></tr> -->
+<!--                                             </table> -->
+<!--                                             </div> -->
+
+											<div class="page2view_id_body_title_part4_ForMainTitle">
+											    <form th:action="@{/member/add-device}" method="post" style="display:inline;">
+											        <input type="hidden" name="deviceId" th:value="${device.idDevice}" />
+											        <button type="submit" class="add_button">추가</button>
+											    </form>
+											</div>
+
+                                        </div>
+
+        
+
+                    </div>
+                    </div>
+
+
+                   
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="Module_Layout_1_1_1_1_2">
+                <a class = "Module_Layout_1_1_1_1_1_0"></a>                            
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Module_Layout_1_1_2"><!--div class="Module_Layout_1_1_2"-->
+<div class="Module_Layout_1_1_2_1" style="background-color:white; border-bottom-left-radius:8px; border-bottom-right-radius:8px;"><!--div class="Module_Layout_1_1_2_1"-->
+
+            <div class="Module_Layout_1_1_2_1_1"> 
+
+            </div>
+
+<div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+<div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+<div class="Module1_start_page2view_id" ><!--모듈1-Start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<!--내용-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="module_name1">
+<div class="module_name2">
+
+<div class="page2view_id_body_content_outer_title_moduleName1">
+   <a>디바이스 기본 정보</a>
+</div>
+<div class="page2view_id_body_content_outer_title_moduleName2">
+
+</div>
+<div class="page2view_id_body_content_outer_title_moduleName3">
+<a class="page2view_id_body_content_outer_title_moduleName3_text">디바이스의 기본적인 정보를 확인할 수 있습니다.</a>
+</div>
+
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+<div class="module1">
+<div class="module2">  
+<div class="module3">
+
+<div class="module_spec_device" >
+  
+		<div class="module_spec_device_version2"
+		     th:replace="fragments/device-spec/device-spec-manf :: manfGraph(${device.manfDevice})">
+		</div>
+        
+        <div class="module_spec_device_version2"
+		     th:replace="fragments/device-spec/device-spec-cpu :: cpuGraph(${device.cpuDevice}, ${device.idCpu}, ${device.manfCpu})">
+		</div>
+        
+		<div class="module_spec_device_version2"
+		     th:replace="fragments/device-spec/device-spec-type :: typeGraph(${device.typeDevice})">
+		</div>
+
+		<div class="module_spec_device_version2"
+		     th:replace="fragments/device-spec/device-spec-release :: releaseGraph(${device.releaseDevice})">
+		</div>
+        
+		<div class="module_spec_device_version2"
+		     th:replace="fragments/device-spec/device-spec-weight :: weightGraph(${device.weightDevice})">
+		</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="module_name1">
+<div class="module_name2">
+
+
+
+<!-- <div class="page2view_id_body_content_outer_title_moduleName1"> -->
+<!--     <a><?=$manf_device?> (<?=$release_device?>) 탑재 프로세서</a> -->
+<!-- </div> -->
+
+
+
+<div class="page2view_id_body_content_outer_title_moduleName1">
+    <a th:text="${device.manfDevice + ' (' + device.releaseDevice + ') 탑재 프로세서'}"></a>
+</div>
+
+
+
+<div class="page2view_id_body_content_outer_title_moduleName2">
+
+</div>
+<div class="page2view_id_body_content_outer_title_moduleName3">
+<a class="page2view_id_body_content_outer_title_moduleName3_text">유사한 라인업에 탑재된 프로세서를 확인하세요.</a>
+</div>
+
+</div>
+</div> 
+
+
+
+
+
+<div class="module1">
+<div class="module2">  
+<div class="module3">
+
+<?php require $_SERVER['DOCUMENT_ROOT'].'/action/(MDL_MANF_manf_device)WITH(MDL_MANF_id_device_release_device)_CREATE.php';?>
+<?php require ($_SERVER['DOCUMENT_ROOT'].'/page2/page2view_id_cpuCount/CpuGraph_MDL_MANF_cpuCount.php');?>
+<?php require $_SERVER['DOCUMENT_ROOT'].'/action/(MDL_MANF_manf_device)WITH(MDL_MANF_id_device_release_device)_DROP.php';?>
+
+</div> 
+</div>
+</div>  
+
+
+
+
+
+<div class="module_name1">
+<div class="module_name2">
+
+
+<!-- <div class="page2view_id_body_content_outer_title_moduleName1"> -->
+<!--     <a><?=$lineup_device?> (<?=$release_device?>) 라인업</a> -->
+<!-- </div> -->
+
+
+
+<div class="page2view_id_body_content_outer_title_moduleName1">
+    <a th:text="${device.lineupDevice + ' (' + device.releaseDevice + ') 라인업'}"></a>
+</div>
+
+
+
+<div class="page2view_id_body_content_outer_title_moduleName2">
+
+</div>
+<div class="page2view_id_body_content_outer_title_moduleName3">
+<a class="page2view_id_body_content_outer_title_moduleName3_text">해당 디바이스와 유사한 라인업을 살펴보세요.</a>
+</div>
+
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+<div class="module1">
+<div class="module2">  
+<div class="module3">
+
+<?php require $_SERVER['DOCUMENT_ROOT'].'/page2/page2view_id_YearLineup/page2view_id_body_DeviceToYearLineup.php';?>
+
+</div>   
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+</div><!--모듈1-End-->
+
+</div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2_1_2"-->
+</div><!--div class="Module_Layout_1_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2"-->
+</div><!--div class="Module_Layout_1_1"-->
+</div><!--div class="Module_Layout_1"-->
+
+
+
+</div><!--div class="button_content1"-->
+</div><!--div class="index_button_line1"-->
+</div><!--div class="index_content"-->
+</div><!--div class="ground"-->
+
+
+</body>
+</html>

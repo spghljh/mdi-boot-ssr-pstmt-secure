@@ -1,0 +1,32 @@
+<!-- fragments/mdi-device-manf/mdi-manf-pie-total.html -->
+<div th:fragment="manufacturerPie(manfStats)">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script th:inline="javascript">
+    var chartData = [
+      ['제조사', '디바이스 수']
+      /*[# th:each="stat : ${manfStats}"]*/
+      , ['/*[[${stat.manfDevice}]]*/', /*[[${stat.count}]]*/]
+      /*[/]*/
+    ];
+
+    google.charts.load('current', {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable(chartData);
+
+      var options = {
+        chartArea: {width: '85%', height: '85%'},
+        backgroundColor:'transparent',
+        legend: { position: "none" },
+        colors: ['#c6e2ff', '#99ccff', '#66b2ff', '#3399ff', '#007fff', '#0059b3', '#003d80']
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById("mdi_CorePie2"));
+      chart.draw(data, options);
+    }
+  </script>
+
+  <div id="mdi_CorePie2" style="width: 400px; height: 300px;"></div>
+</div>

@@ -1,0 +1,738 @@
+a{
+    text-decoration-line: none;
+    }
+
+    
+    @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+
+    
+    
+/* 공통 */
+.ground{
+    background: linear-gradient(white 5%, rgba(255, 77, 172, 0.219));
+    background-attachment: fixed;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index_content_line{
+    width : 1150px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: rgb(255, 0, 0);
+}
+
+.index_content{
+    width : auto;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: blue;
+    margin-top: 90px;
+    margin-bottom: 600px;
+} 
+/* 공통 */   
+
+
+.Module_Layout_1{
+    -webkit-animation: fadeInLeft 0.5s; /* Safari and Chrome */
+}
+
+@keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    transform: translate3d(-3%, 0, 0);
+    }
+    to {
+    opacity: 1;
+    transform: translateZ(0);
+    }
+}
+
+
+    
+/* 모듈 기본 구조 시작*/
+    
+.Module_Layout_1{
+    width:900px;
+    height: auto;
+    border-radius: 10px;
+
+    outline-width: 2px;
+    color : red;
+    /* box-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.637); */
+}
+    
+    
+    
+    
+.Module_Layout_1_1{
+    background-color: rgb(0, 0, 0);/*모듈 모서리 색상 조절*/
+    flex : 6;
+    display: flex;
+    flex-direction: column;
+    padding : 2.4px;/*모듈 모서리 두께 조절*/
+    height: auto;
+    /*box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.63);*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(83, 13, 48);
+    width: 95%;
+}   
+    
+.Module_Layout_1_1_1{
+    background : linear-gradient(90deg, rgb(39, 0, 21) 10%, rgb(83, 5, 48) 30%, rgb(94, 32, 70) 50%,  rgb(179, 84, 135) );
+    /*background : linear-gradient(rgb(36,0,10), rgba(221,0,55,0.795), rgb(36,0,10) );*/
+    flex : 1;
+    color : #ff0000;
+    display: flex;  
+    align-items : center;   
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
+}
+
+.Module_Layout_1_1_1_view{
+    background : linear-gradient(90deg, rgb(31, 0, 16) 2%, rgb(56, 0, 29) 20%,  rgb(105, 26, 75) 45%,  rgb(179, 84, 135) );
+    /*background : linear-gradient(rgb(36,0,10), rgba(221,0,55,0.795), rgb(36,0,10) );*/
+    flex : 1;
+    color : #ff0000;
+    display: flex;  
+    align-items : center;   
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
+}
+
+    
+.Module_Layout_1_1_2{
+    background: white;
+    background-attachment: fixed;
+    /*background : linear-gradient(white, rgb(199, 199, 199));*/
+    flex : 2.4;
+    color : rgba(0, 0, 0, 0.23);     
+    display: flex;
+    width : auto;  
+    flex-direction: column;
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    outline-style: solid;
+    outline-width: 3px;
+}   
+    
+    
+    
+    
+    
+    .Module_Layout_1_1_1_1{
+    flex : 3;
+    margin : 10px;
+    
+    width: 100%;
+    height: auto;
+    display : flex;
+    padding-left : 5px;
+    
+    }   
+    
+    
+    .Module_Layout_1_1_1_1_1_0{
+    color : hsl(0, 0%, 100%);
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    height: 36px;
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 12px;
+    }
+    
+    .Module_Layout_1_1_1_1_1_0_page{
+        color : hsl(0, 0%, 100%);
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        height: 36px;
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-right: 12px;
+        }
+
+
+    .Module_Layout_1_1_1_1_1_0_focus1{
+        color : hsl(0, 0%, 100%);
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        height: 36px;
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-right: 8px;
+        }
+
+    .Module_Layout_1_1_1_1_1_0_focus2{
+        color : hsl(330, 100%, 50%) !important;
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        height: 36px;
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-right: 8px;
+        }
+
+
+
+
+
+    .Module_Layout_1_1_1_1_1_0_22{
+        color : hsla(0, 0%, 100%, 0.178);
+        text-shadow: -1px 0px rgba(0, 0, 0, 0), 0px 1px rgba(0, 0, 0, 0), 1px 0px rgba(0, 0, 0, 0), 0px -1px rgba(0, 0, 0, 0);
+        height: 36px;
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-right: 12px;
+    }
+    .Module_Layout_1_1_1_1_1_0_modify{
+        color : hsl(0, 0%, 100%);
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        height: 36px;
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-right: 12px;
+        }
+
+ 
+ 
+    .Module_Layout_1_1_1_1_1_0_modify:hover{
+        color : hsl(330, 100%, 50%) !important;
+    }
+    
+
+    .Module_Layout_1_1_1_1_1_0:hover{
+        color : hsl(330, 100%, 50%) !important;
+    }
+
+
+
+    .Module_Layout_1_1_1_1_0{
+    font-size: 24px;
+    font-weight: 700;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    outline-width: 1px;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 2px;
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(228, 0, 159, 0.858);
+    }
+
+
+
+    
+    
+    .Module_Layout_1_1_1_1_1{
+    flex : 6;
+    font-size: 24px;
+    
+    font-weight: 700;
+    display : flex;
+    justify-content: left;
+    align-items : center;
+    margin-bottom: 5px;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+     
+ 
+    }
+    
+    .Module_Layout_1_1_1_1_2{
+    flex : 1;
+    
+    display : flex;
+    justify-content: right;
+    align-items : center;
+ 
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    
+    a{
+    color : rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    }
+    
+  
+     
+    }
+
+    .Module_Layout_1_1_1_1_2_back{
+        flex : 1;
+        display : flex;
+        justify-content: right;
+        align-items : center;
+        text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        a{
+        color : rgb(255, 255, 255);
+        font-size: 15px;
+        font-weight: 700;
+        }
+        
+        }
+
+        .Module_Layout_1_1_1_1_2_back_sub1{
+            width: 420px;
+            display : flex;
+            justify-content: right;
+            align-items : center;
+            text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+        
+            a{
+            color : rgb(255, 255, 255);
+            font-size: 15px;
+            font-weight: 700;
+            }
+            
+            }
+
+            .Module_Layout_1_1_1_1_2_back_sub2{
+                width: 90px;
+                display : flex;
+                justify-content: right;
+                align-items : center;
+                text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+          
+                a{
+                color : rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: 700;
+                }
+                
+                }
+
+        .Module_Layout_1_1_1_1_2_back_view{
+    
+            width: 90px;
+            
+            display : flex;
+            justify-content: right;
+            align-items : center;
+         
+            text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+            
+            a{
+            color : rgb(255, 255, 255);
+            font-size: 15px;
+            font-weight: 700;
+            }
+            
+          
+             
+            }
+    
+      
+ 
+    
+    
+    .Module_Layout_1_1_2_1{
+    width : 100%; 
+    background : transparent;   
+    color : black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .Module_Layout_1_1_2_1_user{
+        width : 100%; 
+        background : transparent;   
+        color : black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background: linear-gradient(rgba(116, 13, 87, 0.3) 12%, rgba(116, 13, 87, 0.1) 30%, rgba(177, 46, 140, 0.075) 40% ,rgba(255, 255, 255, 0.699));
+        }
+    
+    
+    
+    
+    .Module_Layout_1_1_2_1_1{
+    
+    margin-top: 15px;
+    margin-bottom : 12px;
+   
+    
+    
+    width: 95%;
+    height: auto;
+    text-align: left;
+    
+    
+
+    a{
+    color : hsl(0, 0%, 0%);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: -3px;
+    
+    }    
+    
+    
+    
+    
+    }
+    
+
+    
+    .Module_Layout_1_1_2_1_2{
+
+  
+    margin-bottom : 10px;
+  
+    width: 100%;
+    height: auto;
+       
+   
+ 
+    
+    font-size: 15px;
+    
+    
+      
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    }
+    
+    
+    .Module_Layout_1_1_2_1_2_1{
+
+    
+    width: 98%;
+    height: auto;
+    
+    color:  hwb(0 0% 100%);
+  
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    }
+    
+  
+
+    
+
+    
+    .Module1_start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    padding-top : 15px;
+    margin-bottom : 30px;
+
+ 
+    }
+    
+    .Module1_start_manfCpu{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 600px;
+    
+    height: 70px;
+    
+    padding : 10px;
+  
+    margin-bottom : 10px;
+    outline-style: solid;
+    color: rgba(0, 0, 0, 0.452);
+    
+    border-radius: 4px;
+    margin : 10px;
+ 
+ 
+  
+}    
+
+.Module_Layout_1_1_1_title_0{
+    font-size: 24px;
+    font-weight: 700;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    outline-width: 1px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 2px;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(228, 0, 159, 0.858);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Module1_start_manfCpu{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 600px;
+
+    height: 70px;
+
+    padding : 10px;
+  
+    margin-bottom : 10px;
+    outline-style: solid;
+    color: rgba(0, 0, 0, 0.452);
+
+    border-radius: 4px;
+    margin : 10px;
+ 
+ 
+  
+}
+
+
+
+
+.Total_Count_manfCpu0{
+    width: 100px; 
+    height: 70px;
+   
+    outline-width: 1px;
+    
+    color: black;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+
+    margin-left: 10px;
+    margin-right: 20px;
+
+
+
+}
+
+
+
+                    .Total_Count_Amount_manfCpu_image{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                    }
+
+
+
+
+
+
+
+
+
+.Total_Count_manfCpu1{
+    width: 240px;    
+    height: 70px;
+    outline-width: 1px;
+    color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 20px;
+             
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Total_Count_manfCpu2{
+    width: 250px;
+
+    height: 70px;
+   
+    outline-width: 1px;
+  
+    
+    color: black;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    margin-left: 30px;
+
+
+}
+
+                        .Total_Count_Amount_manfCpu{
+                            width: auto;
+                            height: auto;
+
+                            outline-width: 1px;
+                        
+                            color: black;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: end;
+
+
+                            font-size: 36px;
+                            font-weight: 700;   
+
+
+                            a{}
+                            a:visited{
+                                color: black;
+              
+                            }
+                        }
+
+
+
+
+
+
+
+
+
+                        .Total_Count_Device_manfCpu{
+                            width: auto;
+                            height: auto;
+                            outline-width: 1px;
+                            color: rgb(0, 0, 0);
+                            align-items :center;
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin-bottom: -2px;
+                      
+                            margin-left: 18px;
+                    }
+
+                    .Total_Count_Device_manfCpu2{
+                        width: auto;
+                        height: auto;
+                        outline-width: 1px;
+                        color: rgb(0, 0, 0);
+                        align-items :center;
+                        font-size: 15px !important;
+                        font-weight: 700;
+                        margin-bottom: -2px;
+                  
+                        margin-left: 18px;
+                }
+    
+
+
+
+                    
+.Module1_start_manfCpu{
+
+}
+
+.Total_Count_manfCpu0{
+
+}
+        .Total_Count_Amount_manfCpu_image{
+
+        }
+
+.Total_Count_manfCpu1{
+
+}
+.Total_Count_manfCpu2{
+
+}
+        .Total_Count_Amount_manfCpu{
+
+        }
+        .Total_Count_Device_manfCpu{
+                
+        }
+    
+
+
+
+.mdi_a{
+    color:#e00096 !important;
+    text-shadow: 0 0 2px white !important;
+   
+    margin-left: 10px !important;
+    margin-right: 8px;
+    font-weight: 700 !important;
+    font-size: 25px !important;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>디바이스 검색 결과</title>
+	<link rel="stylesheet" th:href="@{/css/main_header.css}">
+	<link rel="stylesheet" th:href="@{/css/user.css}">
+	
+	<link rel="stylesheet" th:href="@{/css/index/index_body_index.css}">
+	
+	<link rel="stylesheet" th:href="@{/css/page1/index_body.css}">
+	<link rel="stylesheet" th:href="@{/css/page1/page1_body.css}">
+	<link rel="stylesheet" th:href="@{/css/page1/page0_body_total.css}">
+	<link rel="stylesheet" th:href="@{/css/page2/index_body.css}">
+	<link rel="stylesheet" th:href="@{/css/page2/page2_body.css}">
+	<link rel="stylesheet" th:href="@{/css/page2/page0_body_total.css}">
+	
+</head>
+<body>
+
+  <div th:replace="~{fragments/main-header :: header}"></div>
+  
+<div class="ground">
+<div class="index_content">
+
+<div class="index_button_line1" style="margin-top:30px;">
+<div class="button_content1">
+
+<div class="Module_Layout_1">
+<div class="Module_Layout_1_1">
+
+    <div class="Module_Layout_1_1_1">
+        <div class="Module_Layout_1_1_1_1">
+            <div class="Module_Layout_1_1_1_1_1">
+                <div class="Module_Layout_1_1_1_1_0">
+                    <a style="font-size:18px;">D2</a>
+                </div>
+                <a class="Module_Layout_1_1_1_1_1_0_focus1">"</a>
+                <a class="Module_Layout_1_1_1_1_1_0_focus2" th:text="${search}"></a>
+                <a class="Module_Layout_1_1_1_1_1_0_focus1">"</a>
+                <a class="Module_Layout_1_1_1_1_1_0_focus1">디바이스 조회</a>
+            </div>
+
+            <div class="Module_Layout_1_1_1_1_2_back">
+                <a class="Module_Layout_1_1_1_1_1_0" href="#" onclick="history.back()">뒤로가기</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Module_Layout_1_1_2">
+        <div class="Module_Layout_1_1_2_1">
+            <div class="Module_Layout_1_1_2_1_2">
+                <div class="Module_Layout_1_1_2_1_2_1">
+                    <div class="Module1">
+                        <table class="cpulist_table_page2">
+                            <tr th:each="device : ${deviceResults}" class="SearchResult_Table_Row_page2">
+                                <td>
+                                    <div class="total1_image">
+                                        <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                                            <a style="font-size:14px; color:white;">Dvic</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="total1_type">
+                                        <div class="total2_type"><a>디바이스</a></div>
+                                    </div>
+                                </td>
+<!--                                 <td> -->
+<!--                                     <div class="total1_manf_image"> -->
+<!--                                         <div class="total2_manf_image"> -->
+<!--                                             <img th:src="@{'/images/' + ${device.manfDevice} + '.png'}" alt="brand" width="20"> -->
+<!--                                         </div> -->
+<!--                                     </div> -->
+<!--                                 </td> -->
+								<td>
+								    <div class="total1_manf_image">
+								        <div class="total2_manf_image">
+								            <img th:src="@{'/image/' + ${device.manfDevice} + '.png'}"
+								                 th:alt="${device.manfDevice}"
+								                 width="20">
+								        </div>
+								    </div>
+								</td>
+                                <td>
+                                    <div class="total1_name_device">
+                                        <div class="total2_name_device">
+                                            <a th:href="@{'/devices/' + ${device.idDevice}}" th:text="${device.nameDevice}"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="total1_cpuindevice">
+                                        <div class="total2_cpuindevice">
+<!--                                             <a th:text="${device.idCpu}"></a> -->
+                                            <a th:text="${device.cpuDevice}"></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

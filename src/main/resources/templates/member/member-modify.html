@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/member/index_body_index.css	}">
+<link rel="stylesheet" th:href="@{/css/member/index_body.css}">
+<title>login-detail.html</title>
+</head>
+<body>
+	<div th:replace="~{fragments/main-header :: header}"></div>
+
+<div class="ground"><!--div class="ground"-->
+<div class="index_content"><!--div class="index_content"-->
+<div class="index_button_line1" style="margin-top:30px;"><!--div class="index_button_line1"-->
+<div class="button_content1"><!--div class="button_content1"-->
+
+
+
+<div class="Module_Layout_1" ><!--div class="Module_Layout_1"-->
+<div class="Module_Layout_1_1" ><!--div class="Module_Layout_1_1"-->
+
+    <div class="Module_Layout_1_1_1">
+        <div class="Module_Layout_1_1_1_1">
+            <div class="Module_Layout_1_1_1_1_0">
+            <a style="font-size:18px;">U0</a>                                               
+            </div>
+            <div class="Module_Layout_1_1_1_1_1" >
+
+                <a class = "Module_Layout_1_1_1_1_1_0_page">정보 수정</a>
+
+            </div>
+
+            <div class="Module_Layout_1_1_1_1_2_back" onclick="history.back()">
+                <a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a>
+            </div>
+            
+        </div>
+    </div>
+
+<div class="Module_Layout_1_1_2" ><!--div class="Module_Layout_1_1_2"-->
+<div class="Module_Layout_1_1_2_1_user"><!--div class="Module_Layout_1_1_2_1"-->
+
+            <div class="Module_Layout_1_1_2_1_1"> 
+                <a></a>
+            </div>
+
+<div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+<div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+<div class="Module1" ><!--모듈1-Start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "tool1_user">
+    
+
+
+
+<div class="user_layout">
+<div class="user_layout_form">
+<div class="user_layout_form_line">
+
+
+
+																<div class="user_layout_form_line_box1"
+																	style="margin-top: -10px;">
+
+<a style="font-weight:700; color:white; text-shadow:0 0 4px black; font-size:19px; margin-bottom:50px; margin-top: -40px; margin-left: 570px;"> </a>
+<a style="font-weight:700; color:white; text-shadow:0 0 10px black; font-size:80px; margin-bottom:50px; margin-top: -55px;">MobileDeviceInfo</a>
+<a style="font-weight:700; color:white; text-shadow:0 0 4px black; font-size:24px; margin-bottom:50px; margin-top: -45px;">프로세서부터 디바이스까지 함께 탐색하세요.</a>
+
+																	<a class="user_layout_form_line_box1_semi">로그인</a>
+
+																</div>
+
+
+
+
+                                    
+                                    <div class="user_layout_form_line_box2">
+<form name="member" th:action="@{/member-modify(id=${member.id})}" method="post" th:object="${member}">
+
+    <div class="user_layout_form_line_content_edit_coment">
+        <a class="user_layout_form_line_content_edit_coment">가입 <a class="focus_1">ID</a>는 수정이 불가능합니다.</a>
+    </div>
+
+    <div class="user_layout_form_line_content_edit_coment_id">
+        <a class="user_layout_form_line_content_edit_coment_id2" th:text="${member.id}"></a>
+    </div>
+
+    <div class="user_layout_form_line_content_edit_coment">
+        <a class="user_layout_form_line_content_edit_coment">변경할 </a><a class="focus_1">비밀번호</a><a class="user_layout_form_line_content_edit_coment"> 를 입력해주세요.</a>
+    </div>
+    <div class="user_layout_form_line_content_edit">
+        <input type="password" class="user_layout_form_line_content_edit_input" th:field="*{pass}" />
+    </div>
+
+    <div class="user_layout_form_line_content_edit_coment">
+        <a class="user_layout_form_line_content_edit_coment">변경할 </a><a class="focus_1">비밀번호</a><a class="user_layout_form_line_content_edit_coment"> 를 한번 더 입력해주세요.</a>
+    </div>
+    <div class="user_layout_form_line_content_edit" style="margin-bottom:40px;">
+        <input type="password" class="user_layout_form_line_content_edit_input" th:field="*{passConfirm}" />
+    </div>
+
+    <div class="user_layout_form_line_content_edit_coment">
+        <a class="user_layout_form_line_content_edit_coment">변경할 </a><a class="focus_1">이름</a><a class="user_layout_form_line_content_edit_coment"> 을 입력해주세요.</a>
+    </div>
+    <div class="user_layout_form_line_content">
+        <input type="text" class="user_layout_form_line_content_edit_input" th:field="*{name}" />
+    </div>
+
+    <div class="user_layout_form_line_content_edit_coment">
+        <a class="user_layout_form_line_content_edit_coment">변경할 </a><a class="focus_1">이메일</a><a class="user_layout_form_line_content_edit_coment"> 을 입력해주세요.</a>
+    </div>
+    <div class="user_layout_form_line_content_edit" style="margin-bottom:40px;">
+        <input type="text" class="user_layout_form_line_content_edit_input" th:field="*{email}" />
+    </div>
+
+    <div class="user_layout_form_line_content_edit">
+        <button type="button" class="user_layout_form_line_content_edit_button" onclick="check_input()"><a>저장하기</a></button>
+    </div>
+
+</form>
+
+
+
+
+                                    <script>
+                                    function check_input() {
+                                        if (!document.member.pass.value) {
+                                            alert("비밀번호를 입력하세요!");    
+                                            document.member.pass.focus();
+                                            return;
+                                        }
+                                        if (!document.member.pass_confirm.value) {
+                                            alert("비밀번호 확인을 입력하세요!");    
+                                            document.member.pass_confirm.focus();
+                                            return;
+                                        }
+                                        if (!document.member.name.value) {
+                                            alert("이름을 입력하세요!");    
+                                            document.member.name.focus();
+                                            return;
+                                        }
+                                        if (!document.member.email.value) {
+                                            alert("이메일 주소를 입력하세요!");    
+                                            document.member.email.focus();
+                                            return;
+                                        }
+                                        if (document.member.pass.value != 
+                                                document.member.pass_confirm.value) {
+                                            alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!");
+                                            document.member.pass.focus();
+                                            document.member.pass.select();
+                                            return;
+                                        }
+                                        document.member.submit();
+                                    }
+
+                                    function reset_form() {
+                                        document.member.id.value = "";  
+                                        document.member.pass.value = "";
+                                        document.member.pass_confirm.value = "";
+                                        document.member.name.value = "";
+                                        document.member.email.value = "";
+                                        document.member.id.focus();
+                                        return;
+                                    }
+                                    </script>
+
+                                    </div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<!--내용-->
+
+
+
+
+
+
+
+
+</div><!--모듈1-End-->
+
+</div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2_1_2"-->
+</div><!--div class="Module_Layout_1_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2"-->
+</div><!--div class="Module_Layout_1_1"-->
+</div><!--div class="Module_Layout_1"-->
+
+
+</div><!--div class="button_content1"-->
+</div><!--div class="index_button_line1"-->
+</div><!--div class="index_content"-->
+</div><!--div class="ground"-->
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

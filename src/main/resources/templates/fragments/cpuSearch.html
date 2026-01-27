@@ -1,0 +1,10 @@
+<!-- fragments/cpuSearch.html -->
+<div th:fragment="cpuSearch">
+    <form th:action="@{/search/cpu}" method="get" class="cpulist_searchbox_form">
+        <select class="category" name="catgo">
+            <option value="name_cpu">name_total</option>
+        </select>
+        <input class="cpulist_searchbox_text" type="text" name="search" required placeholder="프로세서 검색하기">
+<!--         <button type="submit">검색</button> -->
+    </form>
+</div>

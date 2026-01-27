@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/index/index_body_index.css}">
+<link rel="stylesheet" th:href="@{/css/index/index-slick-cpu.css}">
+<link rel="stylesheet" th:href="@{/css/index/index-slick-device.css}">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<title>index.html</title>
+</head>
+<body>
+
+  <div th:replace="~{fragments/main-header :: header}"></div>
+
+	<div class="ground">
+		<!--div class="ground"-->
+		<div class="index_content_line">
+			<!--div class="index_content_line"-->
+			<div class="index_content" style="margin-top: -30px;">
+				<!--div class="index_content"-->
+
+				<div class="part1">
+					<!--div class="part1"-->
+
+					<div class="Main_Title">
+						<div class="tool1_title">
+							<a>프로세서 중심으로 살펴보세요.</a>
+						</div>
+						<div class="tool1_semi">
+							<a>프로세서 목록을 통해, 프로세서의 상세 정보를 확인하세요.</a>
+						</div>
+					</div>
+
+					<div class="index_button_line1">
+						<!--div class="index_button_line1"-->
+						<div class="button_content1">
+							<!--div class="button_content1"-->
+
+							<!--모듈-START-->
+							<div class="Module_Layout_1">
+								<!--div class="Module_Layout_1"-->
+								<div class="Module_Layout_1_1" style="width: 1314px;">
+									<!--div class="Module_Layout_1_1"-->
+
+									<!--div class="Module_Layout_1_1_1"-->
+									<div class="Module_Layout_1_1_1" style="width: 1309px;">
+										<div class="Module_Layout_1_1_1_title">
+											<div class="Module_Layout_1_1_1_title_0">
+												<a style="font-size: 18px;">P</a>
+											</div>
+											<div class="Module_Layout_1_1_1_title_1">
+												<a class="Module_Layout_1_1_1_title_00"
+													th:href="@{/cpus-jquery}">프로세서
+													탐색</a>
+											</div>
+											<div class="Module_Layout_1_1_1_title_2">
+<!-- 												<a class="Module_Layout_1_1_1_title_00_ToBase" -->
+<!-- 													onclick=" location.href= '/page3/page3_list_base.php' ">자세히</a> -->
+													<a class="Module_Layout_1_1_1_title_00_ToBase"
+													   th:href="@{'/base'}">자세히</a>
+											</div>
+										</div>
+									</div>
+									<!--div class="Module_Layout_1_1_1"-->
+
+									<!--div class="Module_Layout_1_1_2"-->
+									<div class="Module_Layout_1_1_2"
+										style="width: 1309px; padding-left: 40px;">
+										<div class="Module1_start" style="width: 600px;">
+											<div class="Total_Count"
+												onclick="location.href='/mdi/page1/page1_list.php' ">
+												<div class="Total_Count_Amount">
+													<a th:text="${totalCpuCount}" th:href="@{/cpus-fetch}"></a>
+												</div>
+												<div class="Total_Count_Processor">
+													<a>프로세서</a>
+												</div>
+											</div>
+											<div class="Hot_Items1">
+												<div class="Hot_Items2_1">
+													<div class="Hot_Items2_1_1">
+														<a>실시간 인기 프로세서</a>
+													</div>
+												</div>
+												<div class="Hot_Items2_2">
+													<div class="Hot_Items2_2_1">
+														<div th:insert="~{fragments/hot-cpus :: hotCpu}"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="Module1_start_slider">
+										
+										<div th:replace="~{fragments/cpu-slider :: cpuSlider}"></div>
+										
+										</div>
+									</div>
+									<!--div class="Module_Layout_1_1_2"-->
+
+								</div>
+								<!--div class="Module_Layout_1_1"-->
+							</div>
+							<!--div class="Module_Layout_1"-->
+							<!--모듈-END-->
+
+						</div>
+						<!--div class="index_button_line1"-->
+					</div>
+					<!--div class="button_content1"-->
+				</div>
+				<!--div class="part1"-->
+
+				<div class="part2">
+					<!--div class="part2"-->
+
+					<div class="Main_Title" style="margin-top: -30px;">
+						<div class="tool1_title">
+							<a>디바이스를 탐색할 수 있습니다.</a>
+						</div>
+						<div class="tool1_semi">
+							<a>디바이스 목록을 통해, 디바이스의 상세 정보를 확인하세요.</a>
+						</div>
+					</div>
+
+					<div class="index_button_line1">
+						<!--div class="index_button_line1"-->
+						<div class="button_content1">
+							<!--div class="button_content1"-->
+							<!--모듈-START-->
+
+							<div class="Module_Layout_1">
+								<!--div class="Module_Layout_1"-->
+								<div class="Module_Layout_1_1" style="width: 1314px;">
+									<!--div class="Module_Layout_1_1"-->
+
+									<!--div class="Module_Layout_1_1_1"-->
+									<div class="Module_Layout_1_1_1" style="width: 1309px;">
+										<div class="Module_Layout_1_1_1_title">
+											<div class="Module_Layout_1_1_1_title_0">
+												<a style="font-size: 18px;">D</a>
+											</div>
+											<div class="Module_Layout_1_1_1_title_1">
+												<a class="Module_Layout_1_1_1_title_00"
+													th:href="@{/devices}">디바이스
+													탐색</a>
+											</div>
+											<div class="Module_Layout_1_1_1_title_2">
+<!-- 												<a class="Module_Layout_1_1_1_title_00_ToBase" -->
+<!-- 													onclick=" location.href= '/mdi/page3/page3_list_base.php#Module_Layout_1_device' ">자세히</a> -->
+													<a class="Module_Layout_1_1_1_title_00_ToBase"
+													   th:href="@{'/base#Module_Layout_1_device'}">자세히</a>
+											</div>
+										</div>
+									</div>
+									<!--div class="Module_Layout_1_1_1"-->
+
+									<!--div class="Module_Layout_1_1_2"-->
+									<div class="Module_Layout_1_1_2"
+										style="width: 1309px; padding-left: 40px;">
+										<div class="Module1_start" style="width: 600px;">
+											<div class="Total_Count"
+												onclick="location.href='/mdi/page2/page2_list.php' "
+												style="margin-right: 40px; margin-left: -20px;">
+												<div class="Total_Count_Amount">
+													<a th:text="${totalDeviceCount}" th:href="@{/devices}">
+													</a>
+												</div>
+												<div class="Total_Count_Device">
+													<a>디바이스</a>
+												</div>
+											</div>
+											<div class="Hot_Items2">
+												<div class="Hot_Items2_1">
+													<div class="Hot_Items2_1_1">
+														<a>실시간 인기 디바이스</a>
+													</div>
+												</div>
+												<div class="Hot_Items2_2">
+													<div class="Hot_Items2_2_1">
+														<div th:insert="~{fragments/hot-devices :: hotDevice}"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="Module1_start_slider">
+										
+						
+										<div th:replace="~{fragments/device-slider :: deviceSlider}"></div>
+										
+
+										</div>
+									</div>
+									<!--div class="Module_Layout_1_1_2"-->
+
+								</div>
+								<!--div class="Module_Layout_1_1"-->
+							</div>
+							<!--div class="Module_Layout_1"-->
+
+							<!--모듈-END-->
+						</div>
+						<!--div class="index_button_line1"-->
+					</div>
+					<!--div class="button_content1"-->
+
+				</div>
+				<!--div class="part2"-->
+
+			</div>
+			<!--div class="index_content"-->
+		</div>
+		<!--div class="index_content_line"-->
+	</div>
+	<!--div class="ground"-->
+</body>
+
+
+<!-- console.log(typeof jQuery); -->
+<!-- console.log(jQuery.fn.jquery); -->
+
+<script th:src="@{/js/jquery-3.5.0.js}"></script>
+<script th:src="@{/js/jquery-migrate-3.5.0.js}"></script>
+
+<!--   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script th:src="@{/js/slider-init.js}"></script>
+<script th:src="@{/js/hotcpus.js}"></script>
+<script th:src="@{/js/hotdevices.js}"></script>
+
+
+
+
+
+
+
+</html>

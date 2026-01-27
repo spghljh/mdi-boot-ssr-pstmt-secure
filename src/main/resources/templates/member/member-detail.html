@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/main_header.css}">
+<link rel="stylesheet" th:href="@{/css/user.css}">
+<link rel="stylesheet" th:href="@{/css/member/index_body_index.css}">
+<link rel="stylesheet" th:href="@{/css/member/index_body.css}">
+<link rel="stylesheet" th:href="@{/css/index.css}">
+<title>login-detail.html</title>
+</head>
+<body>
+	<div th:replace="~{fragments/main-header :: header}"></div>
+
+<div class="ground"><!--div class="ground"-->
+<div class="index_content"><!--div class="index_content"-->
+<div class="index_button_line1" style="margin-top:30px;"><!--div class="index_button_line1"-->
+<div class="button_content1"><!--div class="button_content1"-->
+
+
+
+
+
+<div class="Module_Layout_1"><!--div class="Module_Layout_1"-->
+<div class="Module_Layout_1_1"><!--div class="Module_Layout_1_1"-->
+
+<div class="Module_Layout_1_1_1">
+<div class="Module_Layout_1_1_1_1">
+<div class="Module_Layout_1_1_1_1_0"><a style="font-size:18px;">U3</a></div>
+<div class="Module_Layout_1_1_1_1_1"><a class = "Module_Layout_1_1_1_1_1_0_page ">나의 탐색</a></div>
+<div class="Module_Layout_1_1_1_1_2"></div>
+
+
+
+
+
+<div class="Module_Layout_1_1_1_1_2"><!--div class="Module_Layout_1_1_1_1_2"-->
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="Module_Layout_1_1_1_1_2_back_sub1" style="margin-right:10px;">
+    <a class="Module_Layout_1_1_1_1_1_0" th:href="@{/member/modify}" style="color: white">정보 수정</a>
+</div>
+
+<div class="Module_Layout_1_1_1_1_2_back_sub2" style="margin-right:10px;" onclick="history.back()">
+    <a class = "Module_Layout_1_1_1_1_1_0">뒤로가기</a>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Module_Layout_1_1_2"><!--div class="Module_Layout_1_1_2"-->
+<div class="Module_Layout_1_1_2_1" style="background : linear-gradient(white, rgba(80, 11, 60, 0.2), rgba(80, 11, 60, 0.4), rgba(80, 11, 60, 0.6));"> <!--<div class="Module_Layout_1_1_2_1">-->
+
+
+        <div class="Module_Layout_1_1_2_1_1" style="margin-left : 10px; margin-bottom:1px; margin-top:25px;"> 
+        <a class="mdi_a" style="font-size : 30px !important;">MobileDeviceInfo</a><a style="font-size : 24px !important;">에서의</a><a class="mdi_a" th:text="${session.loginUser}"></a><a style="font-size : 24px !important;">님의 탐색을 확인하세요.</a>
+        </div>
+
+        <div class="Module_Layout_1_1_2_1_1" style="margin-left : 40px; margin-top: 10px; margin-bottom: -15px;">
+        <a>관심 프로세서 또는 관심 디바이스를 직접 관리하세요.</a>
+        </div>
+
+
+
+<div class="Module_Layout_1_1_2_1_1"><a></a></div>
+
+<div class="Module_Layout_1_1_2_1_2"><!--div class="Module_Layout_1_1_2_1_2"-->
+<div class="Module_Layout_1_1_2_1_2_1"><!--div class="Module_Layout_1_1_2_1_2_1"-->
+
+
+
+
+
+
+
+
+
+<div class="Module1"><!--div class="Module1"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "tool1_user"><!--div class="tool1_user"-->
+
+<div class="user2">
+<div class="user_info1">
+<div class="button_content2_user" style="display:flex; flex-direction:column;">
+
+
+<div class="button_content3_user">
+
+
+
+<div class="default_user">
+    <div class="default_content_user" >
+        <div class="Module_Layout_1_1_1_1_0" style="margin-bottom: 3px; background-color:grey; margin-left: -4px;"><a style="font-size:12px;">U3-1</a></div>
+        <div class="default_content_text1_user"><a class = "default_content_text_user">나의 관심 프로세서</a></div>
+        <div class="default_content_text2_user"><a class = "default_content_text_user"></a></div>
+        <div class="default_content_text3_user"><a class = "default_content_text_user"></a></div>
+    </div>
+</div>
+
+<div class="action_user">
+    <div class="slider_content1_pro_user">
+        <div class="slider_content_text_div1_pro_user"><a style="margin-left: -280px;">관심 프로세서 관리를 통한 빠른 탐색과 사용자 통계를 제공합니다.</a></div>
+        <div class="slider_content_text_div1_pro_con_user">
+			<div th:insert="~{fragments/member-cpu-module :: cpuModule(${favoriteCpus})}">
+			
+			</div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>  
+</div>
+</div>
+
+
+
+<div class="user2">
+<div class="user_info1">
+<div class="button_content2_user">
+<div class="button_content3_user">
+
+<div class="default_user">
+    <div class="default_content_user" >
+        <div class="Module_Layout_1_1_1_1_0" style="margin-bottom: 3px; background-color:grey; margin-left: -4px;"><a style="font-size:12px;">U3-2</a></div>
+        <div class="default_content_text1_user"><a class = "default_content_text_user">나의 관심 디바이스</a></div>
+        <div class="default_content_text2_user"><a class = "default_content_text_user"></a></div>
+        <div class="default_content_text3_user"><a class = "default_content_text_user"></a></div>
+    </div>
+</div>
+
+<div class="action_user">
+    <div class="slider_content1_pro_user">
+        <div class="slider_content_text_div1_pro_user"><a style="margin-left: -280px;">관심 디바이스 관리를 통한 빠른 탐색과 사용자 통계를 제공합니다.</a></div>
+        <div class="slider_content_text_div1_pro_con_user">
+			<div th:insert="~{fragments/member-device-module :: deviceModule(${favoriteDevices})}">
+			
+			</div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>  
+</div>
+</div>
+
+
+</div><!--div class="tool1_user"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--div class="Module1"-->
+
+
+
+
+
+
+
+
+
+
+</div><!--div class="Module_Layout_1_1_2_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2_1_2"-->
+</div><!--div class="Module_Layout_1_1_2_1"-->
+</div><!--div class="Module_Layout_1_1_2"-->
+
+</div><!--div class="Module_Layout_1_1"-->
+</div><!--div class="Module_Layout_1"-->
+
+</div><!--div class="button_content1"-->
+</div><!--div class="index_button_line1"-->
+</div><!--div class="index_content"-->
+</div><!--div class="ground"-->
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

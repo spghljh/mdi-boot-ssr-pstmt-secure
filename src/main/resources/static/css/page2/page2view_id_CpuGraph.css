@@ -1,0 +1,101 @@
+
+    .chart_div_CpuGraph{
+    width: auto;
+    height : auto;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+
+    
+
+    flex-direction: column;
+    
+    }
+    
+
+
+
+    .chart_div_CpuGraph_line{
+        width: 600px;
+        padding : 3px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items : center;
+
+    }
+
+
+
+
+
+
+
+.chart_div_image_content_CpuGraph{
+    height : 40px;
+    width : 210px;
+    
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-align : center;
+
+    display: flex;
+    justify-content: left;
+    align-items : left;
+
+ 
+    margin:2px;
+
+
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 0 2px white;
+    }
+
+
+    .chart_div_image_content_CpuGraph_CpuManf{
+        height : 40px;
+        width : auto;
+        
+        color: rgb(228, 0, 0);
+
+        text-align : center;
+
+        border-radius: 5px;
+    
+        display: flex;
+        justify-content: center;
+        align-items : center;
+     
+        
+        margin:2px;
+        margin-right: 30px;
+
+   
+  
+        font-size: 24px;
+        }
+              
+                    
+     
+    
+    .chart_div_graph_CpuGraph{  
+    height : 40px;
+    width : 200px;
+    
+    color: #09ff00;
+    background-color: white;
+    text-align : center;
+
+    display: flex;
+    justify-content: center;
+    align-items : center;
+
+
+    
+    margin:2px;
+    }
+
+
+    

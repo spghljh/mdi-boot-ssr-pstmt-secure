@@ -1,0 +1,88 @@
+<!-- src/main/resources/templates/fragments/cpu-spec/core-graph.html -->
+<div th:fragment="coreGraph(coreCpu)">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        var coreCount = [[${coreCpu}]];
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['제조사', '모델 수', { role: 'style' }],
+                ['core', coreCount, '#f80185']
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1, 2, {
+                calc: "stringify",
+                sourceColumn: 1,
+                type: "string",
+                role: "annotation"
+            }]);
+
+            var options = {
+                backgroundColor: 'transparent',
+                chartArea: { width: '90%', height: '60%' },
+                legend: { position: "none" },
+                bar: { groupWidth: '100%' },
+                hAxis: {
+                    minValue: 0,
+                    maxValue: 12,
+                    textPosition: 'none',
+                    gridlines: { color: 'none' }
+                },
+                vAxis: {
+                    textPosition: 'none',
+                    textStyle: { fontSize: 26, bold: true }
+                },
+                annotations: {
+                    textStyle: {
+                        fontSize: 22,
+                        bold: true,
+                        color: 'white',
+                        opacity: 1.8
+                    }
+                }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div_core'));
+            chart.draw(view, options);
+        }
+        /*]]>*/
+    </script>
+
+    <div class="line_spec">
+        <div class="chart_div">
+            <div class="chart_div_image1">
+                <div class="Module_Layout_1_1_1_1_0" style="margin-left:20px;">
+                    <a style="font-size:14px; color:white; width: 40px;">Core</a>
+                </div>
+            </div>
+            <div class="chart_div_image2"><div><a>코어 수</a></div></div>
+            <div class="chart_div_image3">
+                <div onclick="location.href='/cpus?core=[[${coreCpu}]]'">
+<!--                     <a class="chart_div_image3_parameter" th:href="@{'/cpus?core=' + ${coreCpu}}" th:text="${coreCpu}"></a> -->
+					<a class="chart_div_image3_parameter"
+					   th:href="@{/search/cpu(catgo='core_cpu', search=${coreCpu})}"
+					   th:text="${coreCpu}"></a>
+                </div>
+            </div>
+            <div class="chart_div_image4"><div><a>코어</a></div></div>
+<!--             <div class="chart_div_graph_core_cpu"> -->
+<!--                 <div id="chart_div_core" style="width: 100%; height:100%;" -->
+<!--                      th:onclick="'location.href=\'/cpus?core=' + '[[${coreCpu}]]\''"> -->
+<!--                 </div> -->
+<!--             </div> -->
+<!-- 				<div class="chart_div_graph_core_cpu" onclick="location.href='/search/cpu?catgo=core_cpu&search=[[${coreCpu}]]'"> -->
+<!-- 				    <div id="chart_div_core" style="width: 100%; height:100%;"></div> -->
+<!-- 				</div> -->
+				<div class="chart_div_graph_core_cpu"
+				     th:onclick="'location.href=\'/search/cpu?catgo=core_cpu&search=' + ${coreCpu} + '\''">
+				    <div id="chart_div_core" style="width: 100%; height:100%;"></div>
+				</div>
+
+        </div>
+    </div>
+</div>

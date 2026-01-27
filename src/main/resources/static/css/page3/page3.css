@@ -1,0 +1,346 @@
+.mdi1{
+    display: flex;
+
+    height: auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    
+
+
+}
+
+.mdi1_total1{
+    
+    width: 710px;
+    margin-bottom: 8px;
+    height: auto;
+   
+
+      
+    display: flex;
+    justify-content: right;
+    align-items: center;
+   
+}
+
+.mdi1_total1_0{
+   
+}
+.mdi1_total1_1{
+    
+}
+
+
+
+
+
+
+.mdi_core_total{
+  
+    
+    outline-width: 2px;
+    color : black;
+    width: 360px;
+    height: 360px;
+    display: flex;
+
+
+  
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.mdi_core{
+    
+    outline-width: 2px;
+    color : rgb(0, 0, 0);
+    width: 350px;
+    height: 50px; 
+    display: flex;
+    margin-bottom:6px;
+}
+
+        .core001{
+         
+            width: 150px;
+            height: auto;
+            
+            outline-width: 1px;
+            color : rgb(255, 0, 200);
+            margin: 5px;
+            margin-left: 10px;
+            margin-right: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color : #f80185;
+                text-shadow: 0 0 1px white;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+
+
+        }
+        .core001_num{
+           
+            width: 140px;
+      
+           
+            height: auto;
+            
+            outline-width: 1px;
+            color : rgb(255, 0, 200);
+            margin: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        
+        .core_nums{
+           
+            width: 130px;
+     
+            display: flex;
+            justify-content: right;
+            align-items: center;
+       
+            font-size: 30px !important;
+          
+         
+        }
+
+        .core_texts{
+            margin-top: 5px;
+            margin-left: 4px;
+          
+     
+            
+            font-size: 18px !important;
+          
+            }
+        
+
+            .mdi_corepie{
+                
+                color : black;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+  
+                padding-top : 40px;
+                margin-top : 10px;
+                margin-left: 20px;
+
+
+
+                width: 280px;
+                height: 280px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .core001_core{
+                width: 80px;
+                height: auto;
+                
+                outline-width: 1px;
+                color : rgb(255, 0, 200);
+                margin: 5px;
+                margin-left: 10px;
+             
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                a{
+                    color : #f80185;
+                    text-shadow: 0 0 1px white;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+    
+    
+    
+            }
+            .core001_num_core{
+                width: 240px;
+                height: auto;
+                
+                outline-width: 1px;
+                color : rgb(255, 0, 200);
+                margin: 5px;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+    
+    
+            .core_nums_core{
+         
+      
+           
+                font-size: 30px !important;
+             
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Total_Count{
+           
+        margin: 5px;
+              
+        width: 180px;
+        height: auto;
+        outline-width: 1px;
+        color: black;
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        font-size: 54px;
+        font-weight: 700;
+
+        margin-top: 40px;
+        margin-right: 80px;
+        margin-bottom: -10px;
+}
+
+.Total_Count:hover .Total_Count_Amount{
+   
+        a{
+                color: rgb(255, 0, 157);
+                text-shadow: 0 0 3px white;
+        }
+        
+}
+
+
+
+
+
+.Total_Count_Amount{
+        width: auto;
+        height: auto;
+        outline-width: 1px;
+        color: #f80185;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 50px;
+        font-weight: 700;
+}
+.Total_Count_Processor{
+        width: auto;
+        height: auto;
+        outline-width: 1px;
+        color: #f80185;
+        align-items :end;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 11px;
+        margin-left: 5px;
+}
+.Total_Count_Device{
+        width: auto;
+        height: auto;
+        outline-width: 1px;
+        color: #f80185;
+        align-items :end;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 11px;
+        margin-left: 5px;
+}
+
+
+
+
+
+.manf_device_base{
+    display: flex;
+}
+
+.manf_device_base_logo{
+    color : black;
+    outline-width: 1px;
+    width: 30px;
+}
+
+.manf_device_base_name{
+    color : black;
+    outline-width: 1px;
+    width: 90px;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.manf_cpu_base{
+    display: flex;
+}
+
+.manf_cpu_base_logo{
+    color : black;
+    outline-width: 1px;
+    width: 30px;
+}
+
+.manf_cpu_base_name{
+    color : black;
+    outline-width: 1px;
+    width: 80px;
+    display: flex;
+    justify-content: right;
+}

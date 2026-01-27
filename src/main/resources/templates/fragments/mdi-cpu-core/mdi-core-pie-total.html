@@ -1,0 +1,31 @@
+<div th:fragment="mdiCorePie(coreStats)">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script th:inline="javascript">
+    var chartData = [
+      ['코어 수', '빈도']
+      /*[# th:each="stat : ${coreStats}"]*/
+      , ['/*[[${stat.coreCpu}]]*/코어', /*[[${stat.count}]]*/]
+      /*[/]*/
+    ];
+
+    google.charts.load('current', {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable(chartData);
+
+      var options = {
+        chartArea: {width: '85%', height: '85%'},
+        backgroundColor:'transparent',
+        legend: { position: "none" },
+        colors: ['#fdd7e9', '#fe9fd1', '#fe5cb2', '#bc0064', '#ffb3e6', '#ff66cc', '#cc3399']
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById("mdi_CorePie"));
+      chart.draw(data, options);
+    }
+  </script>
+
+  <div id="mdi_CorePie" style="width: 400px; height: 300px;"></div>
+</div>

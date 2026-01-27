@@ -1,0 +1,78 @@
+name: Build and Push Docker Image - mdi-boot-ssr-pstmt-secure
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build, Package JAR, and Push Docker Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Extract Commit Message
+        run: |
+          SAFE_COMMIT_MSG=$(echo "${{ github.event.head_commit.message }}" | tr -cd '[:alnum:]_-')
+          echo "COMMIT_MSG=$SAFE_COMMIT_MSG"
+          echo "COMMIT_MSG=$SAFE_COMMIT_MSG" >> $GITHUB_ENV
+
+      - name: Generate Timestamp
+        run: echo "BUILD_TIMESTAMP=$(date +%Y%m%d-%H%M%S)" >> $GITHUB_ENV
+
+      - name: Print Build Metadata
+        run: |
+          echo "App Name: mdi-boot-ssr-pstmt-secure"
+          echo "Build Time (UTC): ${{ env.BUILD_TIMESTAMP }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Triggered by: ${{ github.actor }}"
+
+      - name: Build with Maven
+        run: mvn clean package -Dcommit.message=${{ env.COMMIT_MSG }}
+
+      - name: Extract Commit Message
+        run: |
+          RAW_MSG="${{ github.event.head_commit.message }}"
+          SAFE_COMMIT_MSG=$(echo "$RAW_MSG" | sed 's/[^[:alnum:]]/-/g' | sed 's/-\{2,\}/-/g' | sed 's/^-//;s/-$//')
+          echo "COMMIT_MSG=$SAFE_COMMIT_MSG"
+          echo "COMMIT_MSG=$SAFE_COMMIT_MSG" >> $GITHUB_ENV
+
+      - name: Set JAR Name
+        run: |
+          JAR_NAME=$(ls target/*.jar | head -n 1)
+          echo "JAR_NAME=$JAR_NAME"
+          echo "JAR_NAME=$JAR_NAME" >> $GITHUB_ENV
+
+      - name: List JAR Output
+        run: ls -lh target/*.jar
+
+      - name: Upload JAR as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mdi-boot-ssr-pstmt-secure-${{ env.COMMIT_MSG }}
+          path: target/*.jar
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mdi-boot-ssr-pstmt-secure:mdi-boot-ssr-pstmt-secure-jar-${{ env.COMMIT_MSG }}
+          build-args: |
+            JAR_FILE=${{ env.JAR_NAME }}

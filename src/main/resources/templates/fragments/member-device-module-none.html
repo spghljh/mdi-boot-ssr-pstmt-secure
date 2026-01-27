@@ -1,0 +1,25 @@
+<!-- fragments/member-device-module.html -->
+<div th:fragment="deviceModule(favoriteDevices)">
+    <div class="units_line" th:if="${#lists.isEmpty(favoriteDevices)}">
+        <a class="units_line_noData1">아직 추가한 항목이 없습니다.</a>
+        <a class="units_line_noData2">디바이스의 상세 정보에서 추가할 수 있습니다.</a>
+    </div>
+
+    <div class="units_line" th:if="${!#lists.isEmpty(favoriteDevices)}">
+        <div th:each="device, iterStat : ${favoriteDevices}">
+            <div class="device_unit">
+                <div class="device_title">
+                    <span th:text="'Device-' + ${iterStat.index + 1}"></span>
+                </div>
+                <div class="device_name">
+                    <span th:text="${device}"></span>
+                </div>
+                <div class="device_action">
+                    <form th:action="@{'/member/delete-device/' + ${iterStat.index + 1}}" method="post">
+                        <button type="submit" class="delete_button">삭제</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

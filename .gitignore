@@ -1,0 +1,81 @@
+# 운영체제 및 에디터 관련
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE 및 개발 도구 설정 파일
+*.classpath
+*.project
+.settings/
+.factorypath
+HELP.md
+
+# 빌드 결과물 및 출력 디렉토리
+bin/
+out/
+/target/
+/build/
+*.class
+*.jar
+*.war
+*.ear
+
+# 빌드 도구 관련 디렉토리
+.mvn/
+.gradle/
+
+# 로그 및 캐시 파일
+logs/
+*.log
+*.tmp
+*.cache
+*.swp
+*.bak
+*.pid
+*.gz
+
+# 환경 설정 및 민감 정보
+*.lock
+.env
+
+# 민감 정보만 제외
+keys/cosign.key
+!keys/cosign.pub         # 공개키는 추적
+
+# 루트 번들 파일은 추적
+!output.bundle            # 루트에 생성된 서명 번들 포함
+
+# dist 디렉토리는 추적 (배포 대상)
+!dist/
+!dist/**
+dist/*.jar
+
+# SSL
+application.properties
+application.yml
+keystore.p12
+
+application-dev.properties
+application-dev-user-maria.properties
+application-dev-user-mysql.properties
+application-dev-user-oracle.properties
+application-dev-user-postgre.properties
+application-dev-user-mssql.properties
+
+application-dev.yml
+application-dev-user-maria.yml
+application-dev-user-mysql.yml
+application-dev-user-oracle.yml
+application-dev-user-postgre.yml
+application-dev-user-mssql.yml
+
+# 데이터베이스 파일
+*.db
+*.h2.db
+*.sqlite
+
+# 테스트 및 커버리지 결과물
+/test-output/
+/coverage/
+
+
