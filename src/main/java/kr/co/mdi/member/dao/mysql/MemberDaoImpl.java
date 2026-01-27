@@ -430,5 +430,32 @@ public class MemberDaoImpl extends AbstractJdbcDao implements MemberDao {
 	    }
 	}
 
+	@Override
+	public void updateUser(MemberDTO member) {
+	    String sql = """
+	        UPDATE member
+	        SET pass = ?, name = ?, email = ?, updated_at = ?
+	        WHERE id = ?
+	    """;
+
+	    try (Connection conn = getConnection(); PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+	        pstmt.setString(1, member.getPass()); // 암호화된 비밀번호
+	        pstmt.setString(2, member.getName());
+	        pstmt.setString(3, member.getEmail());
+	        pstmt.setTimestamp(4, java.sql.Timestamp.valueOf(member.getUpdatedAt()));
+	        pstmt.setString(5, member.getId()); // 로그인 ID 기준으로 수정
+
+	        int rows = pstmt.executeUpdate();
+	        if (rows == 0) {
+	            throw new RuntimeException("회원정보 수정 실패: 해당 ID 없음");
+	        }
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        throw new RuntimeException("회원정보 수정 중 오류 발생", e);
+	    }
+	}
+
 	
 }

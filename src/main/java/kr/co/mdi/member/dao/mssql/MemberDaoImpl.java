@@ -425,4 +425,7 @@ public class MemberDaoImpl extends AbstractJdbcDao implements MemberDao {
 	    }
 	}
 	
+	@Override
+	public void updateUser(MemberDTO member) { 	}
+
 }

@@ -33,5 +33,7 @@ public interface MemberService {
 	List<DeviceDTO> getFavoriteDeviceDetails(String userId);
 
 	void removeDevicePreference(String userId, int deviceId);
+	
+	void updateUser(MemberDTO member); // 회원정보 수정
 
 }

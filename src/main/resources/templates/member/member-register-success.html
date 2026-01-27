@@ -25,10 +25,10 @@
                                         <a style="font-size: 18px;">U2</a>
                                     </div>
                                     <div class="Module_Layout_1_1_1_1_1">
-                                        <a class="Module_Layout_1_1_1_1_1_0_page">회원 가입</a>
+                                        <a class="Module_Layout_1_1_1_1_1_0_page">회원가입 완료</a>
                                     </div>
                                     <div class="Module_Layout_1_1_1_1_2_back" onclick="history.back()">
-                                        <a class="Module_Layout_1_1_1_1_1_0">뒤로가기</a>
+                                        <a class="Module_Layout_1_1_1_1_1_0"></a>
                                     </div>
                                 </div>
                             </div>
@@ -48,38 +48,7 @@
                                                                 <div class="user_layout_form_line_box1">
                                                                     <a style="font-weight:700; color:white; text-shadow:0 0 10px black; font-size:80px; margin-bottom:50px; margin-top: -55px;">MobileDeviceInfo</a>
                                                                     <a style="font-weight:700; color:white; text-shadow:0 0 4px black; font-size:24px; margin-bottom:50px; margin-top: -45px;">프로세서부터 디바이스까지 함께 탐색하세요.</a>
-                                                                    <a class="user_layout_form_line_box1_semi" style="margin-bottom: -15px;">회원 가입</a>
-                                                                </div>
-
-                                                                <div class="user_layout_form_line_box2">
-																	<form th:action="@{/register}" th:object="${user}" method="post" onsubmit="return validateRegisterForm()">
-																	
-																	    <div class="user_layout_form_line_content_register" style="margin-bottom: 30px; margin-top: 30px;">
-																	        <input class="id_input" type="text" th:field="*{id}" id="id" placeholder="아이디" />
-																	    </div>
-																	
-																	    <div class="user_layout_form_line_content_register">
-																	        <input class="pw_input" type="password" th:field="*{pass}" id="pass" placeholder="비밀번호" />
-																	    </div>
-																	
-																	    <div class="user_layout_form_line_content_register" style="margin-bottom: 30px;">
-																	        <input class="pw_input" type="password" th:field="*{passConfirm}" id="passConfirm" placeholder="비밀번호 확인" />
-																	    </div>
-																	
-																	    <div class="user_layout_form_line_content_register">
-																	        <input class="pw_input" type="text" th:field="*{name}" id="name" placeholder="이름" />
-																	    </div>
-																	
-																	    <div class="user_layout_form_line_content_register" style="margin-bottom: 30px;">
-																	        <input class="pw_input" type="text" th:field="*{email}" id="email" placeholder="이메일" />
-																	    </div>
-																	
-																	    <div class="user_layout_form_line_content_register">
-																	        <button type="submit" class="register_button">가입하기</button>
-																	    </div>
-																	
-																	</form>
-
+                                                                    <a class="user_layout_form_line_box1_semi" style="margin-bottom: -15px; font-size:50px">반갑습니다!</a>
                                                                 </div>
 
                                                             </div>
@@ -102,6 +71,5 @@
         </div>
     </div>
 
-<script src="/js/member-register.js"></script>
 </body>
 </html>

@@ -37,16 +37,4 @@ public class MainController {
 		return "index";
 	}
 
-	// 로그인 페이지
-	@GetMapping("/login")
-	public String loginPage() {
-		return "member/member-login";
-	}
-
-//    // BASE 페이지
-//    @GetMapping("/base")
-//    public String basePage() {
-//        return "base/base";
-//    }
-
 }

@@ -188,4 +188,21 @@ public class MemberServiceImpl implements MemberService {
 		}
 	}
 
+	@Override
+	public void updateUser(MemberDTO member) {
+	    // 비밀번호 확인
+	    if (!member.getPass().equals(member.getPassConfirm())) {
+	        throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+	    }
+
+	    // 비밀번호 암호화
+	    member.setPass(PasswordUtil.encode(member.getPass()));
+
+	    // 수정일 갱신
+	    member.setUpdatedAt(LocalDateTime.now());
+
+	    // DB 업데이트
+	    memberDao.updateUser(member);
+	}
+
 }

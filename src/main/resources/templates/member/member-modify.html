@@ -90,7 +90,9 @@
 
                                     
                                     <div class="user_layout_form_line_box2">
-<form name="member" th:action="@{/member-modify(id=${member.id})}" method="post" th:object="${member}">
+<!-- <form name="member" th:action="@{/member-modify(id=${member.id})}" method="post" th:object="${member}"> -->
+<form name="member" th:action="@{/member/modify}" method="post" th:object="${member}">
+
 
     <div class="user_layout_form_line_content_edit_coment">
         <a class="user_layout_form_line_content_edit_coment">가입 <a class="focus_1">ID</a>는 수정이 불가능합니다.</a>
@@ -134,52 +136,6 @@
 
 </form>
 
-
-
-
-                                    <script>
-                                    function check_input() {
-                                        if (!document.member.pass.value) {
-                                            alert("비밀번호를 입력하세요!");    
-                                            document.member.pass.focus();
-                                            return;
-                                        }
-                                        if (!document.member.pass_confirm.value) {
-                                            alert("비밀번호 확인을 입력하세요!");    
-                                            document.member.pass_confirm.focus();
-                                            return;
-                                        }
-                                        if (!document.member.name.value) {
-                                            alert("이름을 입력하세요!");    
-                                            document.member.name.focus();
-                                            return;
-                                        }
-                                        if (!document.member.email.value) {
-                                            alert("이메일 주소를 입력하세요!");    
-                                            document.member.email.focus();
-                                            return;
-                                        }
-                                        if (document.member.pass.value != 
-                                                document.member.pass_confirm.value) {
-                                            alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!");
-                                            document.member.pass.focus();
-                                            document.member.pass.select();
-                                            return;
-                                        }
-                                        document.member.submit();
-                                    }
-
-                                    function reset_form() {
-                                        document.member.id.value = "";  
-                                        document.member.pass.value = "";
-                                        document.member.pass_confirm.value = "";
-                                        document.member.name.value = "";
-                                        document.member.email.value = "";
-                                        document.member.id.focus();
-                                        return;
-                                    }
-                                    </script>
-
                                     </div>
 
 
@@ -191,11 +147,6 @@
 </div>
 </div>
 <!--내용-->
-
-
-
-
-
 
 
 
@@ -214,20 +165,6 @@
 </div><!--div class="index_content"-->
 </div><!--div class="ground"-->
 
-
+<script src="/js/member-modify.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

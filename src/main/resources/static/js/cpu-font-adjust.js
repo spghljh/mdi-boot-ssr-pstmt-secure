@@ -5,9 +5,9 @@ window.addEventListener('load', () => {
     const lines = Math.round(height / lineHeight);
 
     if (lines > 1) {
-      el.style.fontSize = '18px';
+      el.style.fontSize = '15px';
     } else {
-      el.style.fontSize = '22px';
+      el.style.fontSize = '20px';
     }
   });
 });

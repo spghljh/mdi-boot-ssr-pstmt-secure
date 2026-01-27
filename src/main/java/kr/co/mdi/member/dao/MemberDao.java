@@ -72,6 +72,8 @@ public interface MemberDao {
 
 	// 관심 디바이스 삭제
 	void deleteDevicePreference(String memberId, int deviceId);
+	
+	void updateUser(MemberDTO member); // 회원정보 수정
 
 
 }
