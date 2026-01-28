@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>kr.co.mdi</groupId>
-    <artifactId>mdi-boot-ssr-pstmt-legacy</artifactId>
+    <artifactId>mdi-boot-ssr-pstmt-secure</artifactId>
     <version>0.1</version>
     <name>mdi-boot-app</name>
     <description>mobile-device-info</description>
